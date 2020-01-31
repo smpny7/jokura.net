@@ -21,7 +21,7 @@
             <div class="home_title">メンテナンスのお知らせ</div>
             <div class="home_detail">以下の期間において、アップデートに伴いサーバを一時停止します。...</div>
             <div class="time_container">
-                <object class="time" type="image/svg+xml" data="/assets/img/time.svg"></object>
+                <img class="time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
                 <div class="time_letter">1時間前</div>
                 <div class="time_detail"><a href="#">詳細</a></div>
             </div>
@@ -32,7 +32,7 @@
             <div class="home_title">メンテナンスのお知らせ</div>
             <div class="home_detail">以下の期間において、アップデートに伴いサーバを一時停止します。...</div>
             <div class="time_container">
-                <object class="time" type="image/svg+xml" data="/assets/img/time.svg"></object>
+                <img class="time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
                 <div class="time_letter">1時間前</div>
                 <div class="time_detail"><a href="#">詳細</a></div>
             </div>
@@ -43,7 +43,7 @@
             <div class="home_title">メンテナンスのお知らせ</div>
             <div class="home_detail">以下の期間において、アップデートに伴いサーバを一時停止します。...</div>
             <div class="time_container">
-                <object class="time" type="image/svg+xml" data="/assets/img/time.svg"></object>
+                <img class="time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
                 <div class="time_letter">1時間前</div>
                 <div class="time_detail"><a href="#">詳細</a></div>
             </div>

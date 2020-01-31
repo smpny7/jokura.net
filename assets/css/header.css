@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+header {
+    background-color: #2699fb;
+    height: 61px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.header_title {
+    color: #ffffff;
+    font-size: 120%;
+    font-weight: bold;
+    left: 0;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    top: 25px;
+}
+
+.header_link {
+    display: inline-block;
+    height: 61px;
+    position: fixed;
+    right: 0;
+    width: 16%;
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+.header_server {
+    height: 20px;
+    position: fixed;
+    right: 19px;
+    top: 24px;
+    z-index: 2;
+}

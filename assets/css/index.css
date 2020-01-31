@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url("/assets/css/common.css");
+@import url("/assets/css/menu.css");
+@import url("/assets/css/header.css");
+
+.block {
+    height: 40px;
+}
+
+.home_container {
+    background-color: #ffffffad;
+    border: solid 1px #2699fb;
+    margin: 0 auto 30px;
+    padding: 30px 0;
+    text-align: center;
+    width: 94%;
+}
+
+.home_box {
+    display: block;
+    background-color: #bce0fd;
+    margin: 0 auto;
+    width: 311px;
+    height: 220px;
+}
+
+.home_title {
+    width: 311px;
+    margin: 25px auto 0;
+    color: #2699fb;
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.home_detail {
+    width: 311px;
+    margin: 25px auto 0;
+    color: #2699fb;
+    font-family: Arial;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.time_container {
+    text-align: left;
+    margin: 20px auto 0;
+    width: 311px;
+}
+
+.time_letter {
+    color: #0088ff;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.time_detail {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+.time_detail a {
+    color: #818181;
+    text-decoration: none;
+}

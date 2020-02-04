@@ -3,6 +3,10 @@
 @import url("/assets/css/menu.css");
 @import url("/assets/css/header.css");
 
+.header_title::before {
+    content: "ホーム";
+}
+
 .block {
     height: 40px;
 }

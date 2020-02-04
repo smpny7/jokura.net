@@ -1,3 +1,0 @@
-https://api.mojang.com/users/profiles/minecraft/TUIUS
-
-https://sessionserver.mojang.com/session/minecraft/profile/3046de602001464da1d4261fb46252f6

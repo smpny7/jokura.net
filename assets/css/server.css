@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import url("/assets/css/common.css");
+@import url("/assets/css/menu.css");
+@import url("/assets/css/header.css");
+
+.header_title::before {
+    content: "サーバ状況";
+}
+
+.block {
+    height: 40px;
+}
+
+div[class*="server_box"] {
+    background-color: #ffffffad;
+    border: solid 1px #2699fb;
+    vertical-align: bottom;
+}
+
+.server_box1 {
+    display: inline-block;
+    height: 280px;
+    position: relative;
+    width: 94vw;
+}
+
+.server_box2 {
+    display: inline-block;
+    height: 30vw;
+    margin-top: 2.5vw;
+    width: 62vw;
+}
+
+.server_box3 {
+    display: inline-block;
+    height: 30vw;
+    margin-top: 2.5vw;
+    margin-left: 1vw;
+    width: 30vw;
+}
+
+.server_box4 {
+    display: inline-block;
+    height: 30vw;
+    margin-top: 2.5vw;
+    width: 30vw;
+}
+
+.server_box5 {
+    display: inline-block;
+    height: 30vw;
+    margin: 2.5vw 33.1vw 0 1vw;
+    width: 30vw;
+}
+
+.server_working {
+    height: 123px;
+    margin-top: 72px;
+}
+
+div[class*="server_text_"] {
+    color: #2699fb;
+    font-family: Arial;
+    left: 0;
+    right: 0;
+}
+
+.server_text_1 {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 230px;
+}
+
+.server_text_2, .server_text_4, .server_text_6, .server_text_8 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 13vw;
+}
+
+.server_text_3, .server_text_5, .server_text_7, .server_text_9 {
+    font-size: 13px;
+    margin-top: 16px;
+}

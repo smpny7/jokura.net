@@ -48,6 +48,10 @@
     line-height: 1.5;
 }
 
+.time {
+    width: 16px;
+}
+
 .time_container {
     text-align: left;
     margin: 20px auto 0;

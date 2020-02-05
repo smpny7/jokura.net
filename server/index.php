@@ -22,7 +22,6 @@
         <div class="server_box3"><div id="server_text_4">- / -</div><div id="server_text_5">メンバー</div></div>
         <div class="server_box4"><div id="server_text_6">- - - - -</div><div id="server_text_7">バージョン</div></div>
         <div class="server_box5"><div id="server_text_8">- - - - -</div><div id="server_text_9">RCON</div></div>
-
         <div class="block"></div>
     </main>
 

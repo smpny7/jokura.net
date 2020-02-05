@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import url("/assets/css/common.css");
+@import url("/assets/css/menu.css");
+@import url("/assets/css/header.css");
+
+.header_title::before {
+    content: "オンラインユーザ";
+}
+
+.block {
+    height: 40px;
+}
+
+div[class*="online_box_"] {
+    background-color: #ffffffad;
+    border: solid 1px #2699fb;
+    vertical-align: bottom;
+    
+    display: inline-block;
+    height: 43vw;
+    width: 43vw;
+    margin-top: 4vw;
+}
+
+.online_box_2, .online_box_4, .online_box_6, .online_box_8, .online_box_10 {
+    margin-left: 4vw;
+}
+
+img[class*="online_image_"] {
+    margin-top: 10.9vw;
+    width: 13.1vw;
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+div[class*="online_name_"] {
+    color: #2699FB;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 4.36vw;
+}
+
+.online_state {
+    color: #4BBF36;
+    font-family: Arial;
+    font-size: 14px;
+    margin-top: 1.8vw;
+}

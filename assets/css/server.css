@@ -53,32 +53,34 @@ div[class*="server_box"] {
     width: 30vw;
 }
 
-.server_working {
+#server_working {
     height: 123px;
     margin-top: 72px;
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
 }
 
-div[class*="server_text_"] {
+div[id*="server_text_"] {
     color: #2699fb;
     font-family: Arial;
     left: 0;
     right: 0;
 }
 
-.server_text_1 {
+#server_text_1 {
     font-size: 24px;
     font-weight: bold;
     position: absolute;
     top: 230px;
 }
 
-.server_text_2, .server_text_4, .server_text_6, .server_text_8 {
+#server_text_2, #server_text_4, #server_text_6, #server_text_8 {
     font-size: 22px;
     font-weight: bold;
     margin-top: 13vw;
 }
 
-.server_text_3, .server_text_5, .server_text_7, .server_text_9 {
+#server_text_3, #server_text_5, #server_text_7, #server_text_9 {
     font-size: 13px;
     margin-top: 16px;
 }

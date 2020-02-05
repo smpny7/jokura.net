@@ -7,6 +7,7 @@
     <title>サーバ状況</title>
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/server.css">
+    <?php include '../assets/php/server.php'?>
 </head>
 
 <body>
@@ -16,11 +17,11 @@
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
         <div class="block"></div>
-        <div class="server_box1"><img class="server_working" src="/assets/img/working.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"><div class="server_text_1">正常に稼働中</div></div>
-        <div class="server_box2"><div class="server_text_2">jokura-vanila.work</div><div class="server_text_3">サーバアドレス</div></div>
-        <div class="server_box3"><div class="server_text_4">3 / 12</div><div class="server_text_5">メンバー</div></div>
-        <div class="server_box4"><div class="server_text_6">1.14.4</div><div class="server_text_7">バージョン</div></div>
-        <div class="server_box5"><div class="server_text_8">25575</div><div class="server_text_9">RCON</div></div>
+        <div class="server_box1"><img id="server_working" src="/assets/img/notWorking.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"><div id="server_text_1">サーバ停止中</div></div>
+        <div class="server_box2"><div id="server_text_2">- - - - - - - - - - - - - -</div><div id="server_text_3">サーバアドレス</div></div>
+        <div class="server_box3"><div id="server_text_4">- / -</div><div id="server_text_5">メンバー</div></div>
+        <div class="server_box4"><div id="server_text_6">- - - - -</div><div id="server_text_7">バージョン</div></div>
+        <div class="server_box5"><div id="server_text_8">- - - - -</div><div id="server_text_9">RCON</div></div>
 
         <div class="block"></div>
     </main>

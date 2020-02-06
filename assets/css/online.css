@@ -14,12 +14,11 @@
 div[class*="online_box_"] {
     background-color: #ffffffad;
     border: solid 1px #2699fb;
-    vertical-align: bottom;
-    
     display: inline-block;
     height: 43vw;
-    width: 43vw;
     margin-top: 4vw;
+    vertical-align: bottom;
+    width: 43vw;
 }
 
 .online_box_2, .online_box_4, .online_box_6, .online_box_8, .online_box_10 {

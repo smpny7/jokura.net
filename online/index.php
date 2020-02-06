@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/assets/css/online.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/js/stateRefresh.js"></script>
-    <?php include '../assets/php/server.php'?>
 </head>
 
 <body>

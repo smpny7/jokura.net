@@ -1,4 +1,12 @@
 <?php
+    include '../assets/php/maintenance.php';
+    if(state()) {
+        header('Location: /maintenance');
+        exit;
+    }
+?>
+
+<?php
     session_start();
     $_SESSION["from"] = "restart";
 ?>

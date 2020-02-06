@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import url("/assets/css/common.css");
+
+header {
+    background-color: #2699fb;
+    height: 61px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.header_title {
+    color: #ffffff;
+    font-size: 120%;
+    font-weight: bold;
+    left: 0;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    top: 25px;
+}
+
+.header_title::before {
+    content: "メンテナンス中";
+}
+
+.block {
+    height: 40px;
+}
+
+.maintenance_box {
+    background-color: #ffffffad;
+    border: solid 1px #2699fb;
+    height: 500px;
+    margin: 40px auto 0;
+    text-align: center;
+    width: 90vw;
+}
+
+.maintenance_title {
+    color: #2699FB;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.maintenance_img {
+    margin-top: 70px;
+    width: 65vw;
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+.maintenance_contents {
+    color: #2699FB;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.maintenance_copyright {
+    color: rgb(56, 56, 56);
+    font-family: Arial;
+    font-size: 12px;
+    margin-top: 85px;
+}

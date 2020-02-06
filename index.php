@@ -1,3 +1,11 @@
+<?php
+    include './assets/php/maintenance.php';
+    if(state()) {
+        header('Location: /maintenance');
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>

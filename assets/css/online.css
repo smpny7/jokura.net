@@ -41,8 +41,8 @@ div[class*="online_name_"] {
     margin-top: 4.36vw;
 }
 
-.online_state {
-    color: #4BBF36;
+div[id*="online_state_"] {
+    color: #8E8E8E;
     font-family: Arial;
     font-size: 14px;
     margin-top: 1.8vw;

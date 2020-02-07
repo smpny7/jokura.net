@@ -1,11 +1,11 @@
 <?php
+    session_start();
     include '../assets/php/maintenance.php';
-    if(state()) {
+    if(state() && !isset($_GET['root'])) {
         header('Location: /maintenance');
         exit;
     }
 
-    session_start();
     $_SESSION["from"] = "restart";
 ?>
 

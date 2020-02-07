@@ -1,7 +1,6 @@
 <?php
-    session_start();
     include './assets/php/maintenance.php';
-    if(state() && !$_SESSION["root"]) {
+    if(state() && !isset($_GET['root'])) {
         header('Location: /maintenance');
         exit;
     }

@@ -34,7 +34,7 @@
             </div>
             <div class="feed_time_container">
                 <img class="feed_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="feed_time_letter"><?php echo timeShow("2020-02-07 17:17:00");?></div>
+                <div class="feed_time_letter"><?php echo timeShow("2020-02-07 22:30:00");?></div>
             </div>
             <img class="feed_img" src="/assets/img/post0.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             <div class="feed_contents">以下の一部機能に限定して、ゲームサーバ機能を先行公開したいと思います。<br><br>・ホーム<br>・サーバ状況<br>・オンラインユーザ<br>・サーバ再起動</div>

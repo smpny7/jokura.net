@@ -1,7 +1,8 @@
 <?php
     function timeShow($time_input){
         $unix   = strtotime($time_input);
-        $now    = time() + 32400;
+        $now    = time();
+        // $now    = time() + 32400;
         $diff_sec   = $now - $unix;
 
         if($diff_sec < 60){

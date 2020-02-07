@@ -1,11 +1,11 @@
 <?php
+    session_start();
     include '../assets/php/maintenance.php';
-    if(state()) {
+    if(state() && !$_SESSION["root"]) {
         header('Location: /maintenance');
         exit;
     }
 
-    session_start();
     if($_SESSION["from"] == "restart") {
         system("sudo -u jokura_banila bash /home/jokura_banila/minecraft/restart.sh");
         $_SESSION["from"] = "";

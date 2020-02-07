@@ -43,7 +43,7 @@
     margin-top: 51px;
 }
 
-.restart_yes {
+#restart_yes, .restart_yes {
     display: inline-block;
     margin-top: 45px;
     width: 60px;

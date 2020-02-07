@@ -1,6 +1,6 @@
 <?php
     function state() {
-        $state = 0;
+        $state = 1;
         return $state;
     }
 ?>

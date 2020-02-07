@@ -27,7 +27,7 @@
         <div class="maintenance_box">
             <div class="maintenance_title">少しだけお待ちください</div>
             <img class="maintenance_img" src="/assets/img/maintenance.gif" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="maintenance_contents">2020.02.06&nbsp;20:00&nbsp;〜&nbsp;2020.02.07&nbsp;17:00</div>
+            <div class="maintenance_contents">2020.02.07&nbsp;16:30&nbsp;〜&nbsp;2020.02.08&nbsp;00:00</div>
             <div class="maintenance_copyright">&copy;&nbsp;2020&nbsp;情クラ&emsp;All&nbsp;Right&nbsp;Reserved.</div>
         </div>
         <div class="block"></div>

@@ -27,14 +27,25 @@
 
         <div class="block"></div>
         <div class="home_container">
-            <img class="home_box" src="/assets/img/post0.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+            <img class="home_img" src="/assets/img/post0.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             <div class="home_title">Webサーバ稼働のお知らせ</div>
-            <div class="home_detail">以下の一部機能に限定して、ゲームサーバ機能を先行公開したいと思います。...</div>
-            <div class="time_container">
-                <img class="time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="time_letter"><?php echo timeShow("2020-02-07 22:30:00");?></div>
-                <div class="time_detail"><a href="/feed/feed0.php">詳細</a></div>
+            <div class="home_contents">&nbsp;以下の一部機能に限定して、ゲームサーバ機能を先行公開したいと思います。...</div>
+            <div class="home_time_container">
+                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+                <div class="home_time_letter"><?php echo timeShow("2020-02-07 22:30:00");?></div>
             </div>
+                <a class="home_time_detail" href="/feed/feed0.php">詳細</a>
+        </div>
+
+        <div class="home_container">
+            <img class="home_img" src="/assets/img/post0.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+            <div class="home_title">Webサーバ稼働のお知らせ</div>
+            <div class="home_contents">&nbsp;以下の一部機能に限定して、ゲームサーバ機能を先行公開したいと思います。...</div>
+            <div class="home_time_container">
+                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+                <div class="home_time_letter"><?php echo timeShow("2020-02-07 22:30:00");?></div>
+            </div>
+                <a class="home_time_detail" href="/feed/feed0.php">詳細</a>
         </div>
         <div class="block"></div>
         <div class="pagetop">↑</div>

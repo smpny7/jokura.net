@@ -13,6 +13,8 @@
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>オンラインユーザ</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
+    <link rel="icon" href="/assets/icon/icon.ico">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/online.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -84,3 +84,124 @@ div[id*="server_text_"] {
     font-size: 13px;
     margin-top: 16px;
 }
+
+@media screen and (min-width: 600px) {
+    main {
+        display:-webkit-box;
+        display: -webkit-flex;
+        display:-ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap:wrap;
+        -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+
+        margin: 0 auto;
+        width: 1038px;
+    }
+
+    div[class*="server_box"] {
+        /* background-color: #ffffffad; */
+        /* border: solid 1px #2699fb; */
+        /* vertical-align: bottom; */
+        /* margin: 0 auto; */
+    }
+    
+    .server_box1 {
+        /* display: inline-block; */
+        height: 530px;
+        position: static;
+        width: 768px;
+        margin-top: 65px;
+
+        -webkit-box-ordinal-group:1;
+        -ms-flex-order:1;
+        -webkit-order:1;
+        order:1;
+    }
+    
+    .server_box4 {
+        /* display: inline-block; */
+        position: absolute;
+
+        height: 250px;
+        margin-left: 786px;
+        margin-top: 65px;
+        width: 252px;
+
+        -webkit-box-ordinal-group:2;
+        -ms-flex-order:2;
+        -webkit-order:2;
+        order:2;
+    }
+    
+    .server_box5 {
+        /* display: inline-block; */
+        position: absolute;
+
+        height: 250px;
+        margin: 345px 0 0 786px;
+        width: 252px;
+
+        -webkit-box-ordinal-group:3;
+        -ms-flex-order:3;
+        -webkit-order:3;
+        order:3;
+    }
+
+    .server_box2 {
+        /* display: inline-block; */
+        height: 251px;
+        margin-top: 19px;
+        width: 503px;
+
+        -webkit-box-ordinal-group:4;
+        -ms-flex-order:4;
+        -webkit-order:4;
+        order:4;
+    }
+    
+    .server_box3 {
+        /* display: inline-block; */
+        height: 251px;
+        margin-top: 19px;
+        margin-left: 15px;
+        width: 250px;
+
+        -webkit-box-ordinal-group:5;
+        -ms-flex-order:5;
+        -webkit-order:5;
+        order:5;
+    }
+    
+    #server_working {
+        height: 220px;
+        margin-top: 113px;
+        /* -webkit-tap-highlight-color: #00000000; */
+        /* -webkit-touch-callout: none; */
+    }
+    
+    div[id*="server_text_"] {
+        /* color: #2699fb; */
+        /* font-family: Arial; */
+        /* left: 0; */
+        /* right: 0; */
+    }
+    
+    #server_text_1 {
+        font-size: 40px;
+        /* font-weight: bold; */
+        position: relative;
+        top: 105px;
+    }
+    
+    #server_text_2, #server_text_4, #server_text_6, #server_text_8 {
+        font-size: 40px;
+        /* font-weight: bold; */
+        margin-top: 108px;
+    }
+    
+    #server_text_3, #server_text_5, #server_text_7, #server_text_9 {
+        font-size: 22px;
+        margin-top: 33px;
+    }
+}

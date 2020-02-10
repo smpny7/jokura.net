@@ -33,7 +33,7 @@
             </div>
             <div class="feed_time_container">
                 <img class="feed_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="feed_time_letter"><?php echo timeShow("2020-02-09 20:00:00");?></div>
+                <div class="feed_time_letter"><?php echo timeShow("2020-02-10 10:50:00");?></div>
             </div>
             <img class="feed_img" src="/assets/img/post1.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             <div class="feed_contents">&nbsp;PC・スマートフォンからのアクセスに対応しました。<br><br>動作確認済みブラウザは，Google&nbsp;Chrome・Microsoft&nbsp;Edge<br>&nbsp;(EdgeHTML, Chromium, Webkit, Blink)・Safari・Firefoxとなります。<br><br>キャッシュが残っている場合がありますので、うまく表示されない場合はデータの削除をお願いします。</div>

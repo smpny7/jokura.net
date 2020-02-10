@@ -32,7 +32,7 @@
             <div class="home_contents">&nbsp;PC・スマートフォンからのアクセスに対応しました。動作確認済みブラウザは，Google&nbsp;Chrome・Microsoft&nbsp;E...</div>
             <div class="home_time_container">
                 <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-09 20:00:00");?></div>
+                <div class="home_time_letter"><?php echo timeShow("2020-02-10 10:50:00");?></div>
             </div>
                 <a class="home_time_detail" href="/feed/feed1.php">詳細</a>
         </div>

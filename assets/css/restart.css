@@ -59,3 +59,60 @@
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
 }
+
+@media screen and (min-width: 600px) {
+    .restart_box {
+        /* background-color: #ffffffad; */
+        /* border: solid 1px #2699fb; */
+        height: 751px;
+        margin-bottom: 0;
+        margin-top: 40px;
+        /* text-align: center; */
+        width: 502px;
+    }
+
+    .restart_title {
+        /* color: #2699FB; */
+        /* font-family: Arial; */
+        font-size: 45px;
+        /* font-weight: bold; */
+        margin-top: 77px;
+    }
+
+    .restart_img {
+        margin-top: 70px;
+        width: 202px;
+        /* -webkit-tap-highlight-color: #00000000; */
+        /* -webkit-touch-callout: none; */
+    }
+
+    .restart_contents {
+        /* color: #2699FB; */
+        /* font-family: Arial; */
+        font-size: 25px;
+        line-height: 42px;
+        margin-top: 92.3px;
+    }
+
+    .restart_box a {
+        position: relative;
+        z-index: 4;
+    }
+
+    #restart_yes, .restart_yes {
+        /* display: inline-block; */
+        margin-top: 64px;
+        width: 75px;
+        /* -webkit-tap-highlight-color: #00000000; */
+        /* -webkit-touch-callout: none; */
+    }
+
+    .restart_no {
+        /* display: inline-block; */
+        margin-left: 54.7px;
+        margin-top: 64px;
+        width: 75px;
+        /* -webkit-tap-highlight-color: #00000000; */
+        /* -webkit-touch-callout: none; */
+    }    
+}

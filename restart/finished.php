@@ -9,6 +9,9 @@
     if($_SESSION["from"] == "restart") {
         system("sudo -u jokura_banila bash /home/jokura_banila/minecraft/restart.sh");
         $_SESSION["from"] = "";
+    } else {
+        header('Location: /');
+        exit;
     }
 ?>
 

@@ -9,6 +9,9 @@
     if($_SESSION["from"] == "backup") {
         system("sudo -u jokura_banila bash /home/jokura_banila/minecraft/backup.sh");
         $_SESSION["from"] = "";
+    } else {
+        header('Location: /');
+        exit;
     }
 ?>
 

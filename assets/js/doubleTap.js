@@ -3,5 +3,5 @@ $(document).on('click', '#submit', function(){
         return false;
     }
     $(this).addClass('double_click');
-    document.getElementById("restart_yes").src = "/assets/img/yes2.png";
+    document.getElementById("yes").src = "/assets/img/yes2.png";
 });

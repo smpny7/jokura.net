@@ -6,10 +6,7 @@
         exit;
     }
 
-    if($_SESSION["from"] == "backup") {
-        system("sudo -u jokura_banila bash /home/jokura_banila/minecraft/backup.sh");
-        $_SESSION["from"] = "";
-    }
+    $_SESSION["from"] = "backup";
 ?>
 
 <!DOCTYPE html>
@@ -35,8 +32,11 @@
         <div class="backup_box">
             <div class="backup_title">バックアップ</div>
             <img class="backup_img" src="/assets/img/backup2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="backup_contents">サーバに処理を送信しました．<br>まもなく再起動が実行されます．</div>
-            <a href="/"><img class="backup_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
+            <div class="backup_contents">ボタン押下後，30秒程度かかりますが<br>そのままお待ちください．</div>
+            <a id="submit" href="finished.php"><img id="backup_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script type="text/javascript" src="/assets/js/doubleTap.js"></script>
+            <a href="/"><img class="backup_no" src="/assets/img/no.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         </div>
         <div class="block"></div>
     </main>

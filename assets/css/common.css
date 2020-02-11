@@ -22,8 +22,8 @@ main {
     object-fit: cover;
     overflow: hidden;
     width: 100%;
-    /* filter: blur(4px); */
-    /* -webkit-filter: blur(4px); */
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
 
     position: fixed;
     left: 0;

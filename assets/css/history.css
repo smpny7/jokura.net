@@ -4,7 +4,7 @@
 @import url("/assets/css/header.css");
 
 .header_title::before {
-    content: "オンラインユーザ";
+    content: "バックアップ履歴";
 }
 
 .block {
@@ -15,32 +15,46 @@ div[class*="history_box_"] {
     background-color: #ffffffad;
     border: solid 1px #2699fb;
     display: inline-block;
-    height: 43vw;
-    margin-top: 4vw;
+    height: 120px;
+    margin-top: 20px;
+    position: relative;
     vertical-align: bottom;
-    width: 43vw;
+    width: 43.4vw;
 }
 
-img[class*="online_image_"] {
-    margin-top: 10.9vw;
-    width: 13.1vw;
+.history_box_right {
+    margin-left: 20px;
+}
+
+.history_delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 12px;
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
 }
 
-div[class*="online_name_"] {
+.history_image {
+    margin-top: 31.7px;
+    width: 47px;
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+.history_date {
     color: #2699FB;
     font-family: Arial;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 4.36vw;
+    margin-top: 10px;
 }
 
-div[id*="online_state_"] {
+.history_time {
     color: #8E8E8E;
     font-family: Arial;
     font-size: 14px;
-    margin-top: 1.8vw;
+    margin-top: 2px;
 }
 
 @media screen and (min-width: 600px) {

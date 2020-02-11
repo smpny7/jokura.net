@@ -1,0 +1,87 @@
+@charset "utf-8";
+@import url("/assets/css/common.css");
+@import url("/assets/css/menu.css");
+@import url("/assets/css/header.css");
+
+.header_title::before {
+    content: "オンラインユーザ";
+}
+
+.block {
+    height: 40px;
+}
+
+div[class*="history_box_"] {
+    background-color: #ffffffad;
+    border: solid 1px #2699fb;
+    display: inline-block;
+    height: 43vw;
+    margin-top: 4vw;
+    vertical-align: bottom;
+    width: 43vw;
+}
+
+img[class*="online_image_"] {
+    margin-top: 10.9vw;
+    width: 13.1vw;
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+div[class*="online_name_"] {
+    color: #2699FB;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 4.36vw;
+}
+
+div[id*="online_state_"] {
+    color: #8E8E8E;
+    font-family: Arial;
+    font-size: 14px;
+    margin-top: 1.8vw;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        margin: 0 auto;
+        width: 700px;
+    }
+
+    .history_box_left {
+        /* background-color: #ffffffad; */
+        /* border: solid 1px #2699fb; */
+        /* display: inline-block; */
+        height: 300px;
+        margin-top: 30px;
+        /* vertical-align: bottom; */
+        width: 300px;
+    }
+
+    .online_box_2, .online_box_4, .online_box_6, .online_box_8, .online_box_10 {
+        margin-left: 75px;
+    }
+
+    img[class*="online_image_"] {
+        margin-top: 90px;
+        width: 87px;
+        /* -webkit-tap-highlight-color: #00000000; */
+        /* -webkit-touch-callout: none; */
+    }
+
+    div[class*="online_name_"] {
+        /* color: #2699FB; */
+        /* font-family: Arial; */
+        font-size: 25px;
+        /* font-weight: bold; */
+        margin-top: 25px;
+    }
+    
+    div[class*="online_state_"] {
+        /* color: #8E8E8E; */
+        /* font-family: Arial; */
+        font-size: 22px;
+        margin-top: 20px;
+    }
+}

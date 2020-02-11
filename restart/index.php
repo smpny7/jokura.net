@@ -33,7 +33,7 @@
             <div class="restart_title">サーバ再起動</div>
             <img class="restart_img" src="/assets/img/restart2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             <div class="restart_contents">ボタン押下後，30秒程度かかりますが<br>そのままお待ちください．</div>
-            <a id="submit" href="finished.php"><img id="restart_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
+            <a id="submit" href="finished.php"><img id="yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script type="text/javascript" src="/assets/js/doubleTap.js"></script>
             <a href="/"><img class="restart_no" src="/assets/img/no.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>

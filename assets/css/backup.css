@@ -43,7 +43,7 @@
     margin-top: 51px;
 }
 
-#backup_yes, .backup_yes {
+#yes, .backup_yes {
     display: inline-block;
     margin-top: 45px;
     width: 60px;
@@ -99,7 +99,7 @@
         z-index: 4;
     }
 
-    #backup_yes, .backup_yes {
+    #yes, .backup_yes {
         /* display: inline-block; */
         margin-top: 64px;
         width: 75px;

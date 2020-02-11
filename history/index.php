@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>オンラインユーザ</title>
+    <title>バックアップ履歴</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
     <link rel="icon" href="/assets/icon/icon.ico">
     <link rel="stylesheet" href="/assets/css/reset.css">
@@ -27,8 +27,8 @@
 
         <div class="block"></div>
         <?php
-            $result = glob('./backup/20*');
-            // $result = glob('/home/jokura_banila/backup/20*');
+            // $result = glob('./backup/20*');
+            $result = glob('/home/jokura_banila/backup/20*');
             $count = 1;
             foreach (array_reverse($result) as $raw) {
                 if ($count % 2 == 1) {

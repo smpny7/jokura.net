@@ -27,7 +27,16 @@ if(state() && !isset($_GET['root'])) {
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
         <div class="block"></div>
+        <?php
+            $result = glob('./img/*');
+            foreach (array_reverse($result) as $raw) {
+                preg_match("/(.*)(?:\.([^.]+$))/",ltrim($raw, './img/'),$filename);
+                $number = mb_substr($filename[1], 0, 3);
+                $photographer = mb_substr($filename[1], 4);
+                echo $number.$photographer."<br>";
 
+            }
+        ?>
         <div class="block"></div>
     </main>
 

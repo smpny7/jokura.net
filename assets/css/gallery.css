@@ -84,77 +84,58 @@ _::-webkit-full-page-media, _:future, :root #galleryPhoto {
 }
 
 @media screen and (min-width: 600px) {
-    form {
+    .backup_box {
         /* background-color: #ffffffad; */
         /* border: solid 1px #2699fb; */
-        height: 600px;
-        /* margin: 30px auto 0; */
+        height: 751px;
+        margin-bottom: 0;
+        margin-top: 40px;
         /* text-align: center; */
-        width: 600px;
+        width: 502px;
     }
-    
-    .galleryTitle {
-        /* color: #2699fb; */
+
+    .backup_title {
+        /* color: #2699FB; */
         /* font-family: Arial; */
         font-size: 45px;
         /* font-weight: bold; */
         margin-top: 77px;
     }
-    
-    #galleryPhotographer {
-        height: 55px;
-        width: 500px;
-    
-        /* border-radius: 50px; */
-        /* border: solid 1.5px #2699fb; */
-        /* background-color: #ffffff; */
-        /* -webkit-appearance: none; */
-        /* color: #2699fb; */
-        margin: 120px auto 0;
-        /* text-align: center; */
-        /* font-size: 16px; */
-        z-index: 10;
-        position: relative;
-    
-    }
-    
-    #galleryPhoto {
-        /* font-family: Arial; */
-        /* margin: 50px auto 0; */
-        z-index: 10;
-        position: relative;
-        text-align: center;
-    }
-    
-    .errorMessage {
-        /* color: #fb2626; */
-        /* font-family: Arial; */
-        font-size: 16px;
-        /* font-weight: bold; */
-        /* margin-top: 45px; */
-    }
-    
-    #galleryUpload {
-        /* display: inline-block; */
+
+    .backup_img {
         margin-top: 70px;
-        width: 75px;
-        /* vertical-align: bottom; */
+        width: 202px;
         /* -webkit-tap-highlight-color: #00000000; */
         /* -webkit-touch-callout: none; */
-        z-index: 10;
-        position: relative;
     }
-    
-    .galleryCancel {
+
+    .backup_contents {
+        /* color: #2699FB; */
+        /* font-family: Arial; */
+        font-size: 25px;
+        line-height: 42px;
+        margin-top: 92.3px;
+    }
+
+    .backup_box a {
+        position: relative;
+        z-index: 4;
+    }
+
+    #yes, .backup_yes {
         /* display: inline-block; */
-        /* margin-left: 30px; */
-        margin-top: 70px;
+        margin-top: 64px;
         width: 75px;
-        /* vertical-align: bottom; */
         /* -webkit-tap-highlight-color: #00000000; */
         /* -webkit-touch-callout: none; */
-        z-index: 10;
-        position: relative;
     }
-    
+
+    .backup_no {
+        /* display: inline-block; */
+        margin-left: 54.7px;
+        margin-top: 64px;
+        width: 75px;
+        /* -webkit-tap-highlight-color: #00000000; */
+        /* -webkit-touch-callout: none; */
+    }    
 }

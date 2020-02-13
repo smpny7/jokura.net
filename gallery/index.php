@@ -30,13 +30,19 @@ if(state() && !isset($_GET['root'])) {
         <?php
             $result = glob('./img/*');
             foreach (array_reverse($result) as $raw) {
-                preg_match("/(.*)(?:\.([^.]+$))/",ltrim($raw, './img/'),$filename);
+                $file = ltrim($raw, './img/');
+                preg_match("/(.*)(?:\.([^.]+$))/",$file,$filename);
                 $number = mb_substr($filename[1], 0, 3);
                 $photographer = mb_substr($filename[1], 4);
-                echo $number.$photographer."<br>";
+                // echo $file.$number.$photographer."<br>";
 
             }
         ?>
+        <div class="gallery_container"><img class="gallery_img" src="img/000-kit130101.png" alt="画像"><div class="gallery_photographer">kit130101</div></div>
+        <div class="gallery_container"><img class="gallery_img" src="img/001-Chazuke_0_.png" alt="画像"><div class="gallery_photographer">Chazuke_0_</div></div>
+        <div class="gallery_container"><img class="gallery_img" src="img/backup.png" alt="画像"><div class="gallery_photographer">kit130101</div></div>
+        <a href="upload.php"><img class="gallery_new" src="/assets/img/galleryNew.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
+
         <div class="block"></div>
     </main>
 

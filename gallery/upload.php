@@ -77,7 +77,7 @@ if (isset($_POST['galleryState'])) {
             <input type="file" id="galleryPhoto" name="galleryPhoto" size="30"/>
             <div class="errorMessage"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES, 'UTF-8'); ?></div>
             <input type="image" id="galleryUpload" name="galleryUpload" src="/assets/img/yes.png">
-            <a href="/"><img class="galleryCancel" src="/assets/img/no.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
+            <a href="index.php"><img class="galleryCancel" src="/assets/img/no.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         </form>
         <div class="block"></div>
     </main>

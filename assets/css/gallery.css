@@ -11,76 +11,49 @@
     height: 40px;
 }
 
-form {
-    background-color: #ffffffad;
-    border: solid 1px #2699fb;
-    height: 435px;
-    margin: 30px auto 0;
-    text-align: center;
-    width: 90vw;
+.gallery_container {
+    margin: 25px auto 0;
+    width: fit-content;
 }
 
-.galleryTitle {
-    color: #2699fb;
+.gallery_img {
+    height: 175px;
+}
+
+.gallery_photographer {
+    color: #2699FB;
     font-family: Arial;
-    font-size: 26px;
-    font-weight: bold;
-    margin-top: 45px;
+    font-size: 10px;
+    /* font-weight: bold; */
+    /* margin-top: 77px; */
+    text-align: right;
+    position: relative;
+    bottom: 13px;
+    right: 2px;
 }
 
-#galleryPhotographer {
-    height: 45px;
-    width: 280px;
-
-    border-radius: 50px;
-    border: solid 1.5px #2699fb;
-    background-color: #ffffff;
-    -webkit-appearance: none;
-    color: #2699fb;
-    margin: 70px auto 0;
-    /* padding-left: 25px; */
-    text-align: center;
-    font-size: 16px;
-
+.gallery_post {
+	background-color: #2699FB;
+	border-radius: 3.3rem;
+	bottom: 1rem;
+	color: #ffffff;
+	cursor: pointer;
+	display: none;
+	font-size: 1.5rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	position: fixed;
+	right: 1rem;
+	text-align: center;
+	text-decoration: none;
+	width: 3.3rem;
 }
 
-#galleryPhoto {
-    font-family: Arial;
-    /* color: #2699fb; */
-    /* font-size: 16px; */
-    margin: 50px auto 0;
-    /* width: 200px; */
-}
-
-_::-webkit-full-page-media, _:future, :root #galleryPhoto {
-    width: 200px;
-}
-
-.errorMessage {
-    color: #fb2626;
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: bold;
-    margin-top: 45px;
-}
-
-#galleryUpload {
-    display: inline-block;
-    margin-top: 40px;
-    width: 60px;
-    vertical-align: bottom;
-    -webkit-tap-highlight-color: #00000000;
-    -webkit-touch-callout: none;
-}
-
-.galleryCancel {
-    display: inline-block;
-    margin-left: 30px;
-    margin-top: 40px;
-    width: 60px;
-    vertical-align: bottom;
-    -webkit-tap-highlight-color: #00000000;
-    -webkit-touch-callout: none;
+.gallery_new {
+    position: fixed;
+    bottom: 12px;
+    right: 10px;
+    width: 50px;
 }
 
 @media screen and (min-width: 600px) {

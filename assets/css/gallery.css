@@ -67,4 +67,13 @@
         bottom: 19px;
         right: 6px;
     }
+
+    .gallery_new {
+        right: 5vw;
+        bottom: 3vh;
+        width: 70px;
+        /* left: 70vw; */
+        /* margin: 0 auto; */
+        /* padding-left: 100px; */
+    }
 }

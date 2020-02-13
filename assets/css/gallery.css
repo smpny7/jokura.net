@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url("/assets/css/common.css");
+@import url("/assets/css/menu.css");
+@import url("/assets/css/header.css");
+
+.header_title::before {
+    content: "ピクチャ";
+}
+
+.block {
+    height: 40px;
+}
+
+.gallery_container {
+    margin: 25px auto 0;
+    width: fit-content;
+}
+
+.gallery_img {
+    height: 175px;
+}
+
+.gallery_photographer {
+    color: #2699FB;
+    font-family: Arial;
+    font-size: 10px;
+    text-align: right;
+    position: relative;
+    bottom: 13px;
+    right: 2px;
+}
+
+.gallery_post {
+	background-color: #2699FB;
+	border-radius: 3.3rem;
+	bottom: 1rem;
+	color: #ffffff;
+	cursor: pointer;
+	display: none;
+	font-size: 1.5rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	position: fixed;
+	right: 1rem;
+	text-align: center;
+	text-decoration: none;
+	width: 3.3rem;
+}
+
+.gallery_new {
+    position: fixed;
+    bottom: 12px;
+    right: 10px;
+    width: 50px;
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery_img {
+        height: auto;
+        width: 900px;
+    }
+
+    .gallery_photographer {
+        font-size: 14px;
+        bottom: 19px;
+        right: 6px;
+    }
+
+    .gallery_new {
+        right: 5vw;
+        bottom: 3vh;
+        width: 70px;
+        /* left: 70vw; */
+        /* margin: 0 auto; */
+        /* padding-left: 100px; */
+    }
+}

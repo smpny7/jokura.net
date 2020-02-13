@@ -19,7 +19,10 @@ if (isset($_POST['galleryState'])) {
     // if (!empty($_POST["galleryUpload"]) && !empty($_POST["galleryPhoto"])) 
     else {
 
-        $num = 0;
+        $result = glob('./img/*');
+        foreach ($result as $raw) {
+            $num = str_pad(mb_substr(ltrim($raw, './img/'), 0, 3)+1, 3, '0', STR_PAD_LEFT);
+        }
 
         //拡張子判別
         $mimetype  = mime_content_type($_FILES['galleryPhoto']['tmp_name']);
@@ -36,9 +39,9 @@ if (isset($_POST['galleryState'])) {
                 // chmod($uppath, 0644);
 
                 $errorMessage =  $upfile . "をアップロードしました。";
-                // $_SESSION["USERID"] = $_POST["userid"];
-                // header("Location: /");
-                // exit();
+                // $_SESSION["from"] = "galleryUpload";
+                header("Location: index.php");
+                exit();
 
             } else {
                 $errorMessage =  "ファイルをアップロードできません。";

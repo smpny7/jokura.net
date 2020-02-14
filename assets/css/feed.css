@@ -125,7 +125,7 @@
     }
 
     .feed_container a {
-        background-color: lightcoral;
+        /* background-color: lightcoral; */
         /* display: inline-block; */
         height: 34px;
         left: 25px;
@@ -166,7 +166,7 @@
     }
 
     .feed_author_container {
-        margin-left: 590px;
+        margin-left: 530px;
         margin-top: 90px;
         /* position: static; */
         width: 180px;
@@ -189,7 +189,7 @@
     }
 
     .feed_time_container {
-        margin-left: 590px;
+        margin-left: 530px;
         /* margin-top: 8px; */
         /* position: static; */
         width: 180px;

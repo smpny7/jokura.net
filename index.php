@@ -29,6 +29,16 @@
 
         <div class="block"></div>
         <div class="home_container">
+            <img class="home_img" src="/assets/img/post4.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+            <div class="home_title">機能拡張のお知らせ</div>
+            <div class="home_contents">&nbsp;以下の機能が使えるようになりました。...</div>
+            <div class="home_time_container">
+                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+                <div class="home_time_letter"><?php echo timeShow("2020-02-15 17:00:00");?></div>
+            </div>
+                <a class="home_time_detail" href="/feed/feed4.php">詳細</a>
+        </div>
+        <div class="home_container">
             <img class="home_img" src="/assets/img/post3.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             <div class="home_title">採掘場完成のお知らせ</div>
             <div class="home_contents">&nbsp;Discordでも告知したのですが、砂の城付近(x=-20,z=-410)...</div>

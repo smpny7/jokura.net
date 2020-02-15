@@ -17,7 +17,9 @@
 }
 
 .gallery_img {
-    height: 175px;
+    width: 98vw;
+    filter: drop-shadow(0px 0px 10px #97c8ffcc);
+    -webkit-filter: drop-shadow(0px 3px 10px #97c8ffcc);
 }
 
 .gallery_photographer {

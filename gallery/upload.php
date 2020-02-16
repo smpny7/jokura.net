@@ -15,6 +15,9 @@ if (isset($_POST['galleryState'])) {
         $errorMessage = 'ファイルを未選択です。';
     }
 
+
+    //img ファイル　パーミッション　777
+
     // 入力文字審査
     // if (!empty($_POST["galleryUpload"]) && !empty($_POST["galleryPhoto"])) 
     else {

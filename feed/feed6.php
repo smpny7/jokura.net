@@ -37,7 +37,7 @@
                 <img class="feed_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
                 <div class="feed_time_letter"><?php echo timeShow("2020-02-17 00:00:00");?></div>
             </div>
-            <img class="feed_img" src="/assets/img/post5.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+            <img class="feed_img" src="/assets/img/post6.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             <div class="feed_contents">&nbsp;Youtubeの動画を参考(もろパクリ)して作りましたー 建築は楽しいですね</br>参考にした動画 https://www.youtube.com/watch?v=-k5AtCIae_o<br></div>
         </div>
     </main>

@@ -29,6 +29,16 @@
 
         <div class="block"></div>
         <div class="home_container">
+            <img class="home_img" src="/assets/img/post9.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+            <div class="home_title">Optifine1.15.2対応状況について</div>
+            <div class="home_contents">&nbsp;最近プレビュー版の公開頻度が高くなってきています。...</div>
+            <div class="home_time_container">
+                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+                <div class="home_time_letter"><?php echo timeShow("2020-02-24 13:30:00");?></div>
+            </div>
+                <a class="home_time_detail" href="/feed/feed9.php">詳細</a>
+        </div>
+        <div class="home_container">
             <img class="home_img" src="/assets/img/post8.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             <div class="home_title">僻地に、建築 ～その3～</div>
             <div class="home_contents">&nbsp;今回は、高架下のカフェと薬局を製作しましたー。...</div>

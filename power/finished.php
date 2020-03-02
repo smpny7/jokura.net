@@ -6,7 +6,16 @@
         exit;
     }
 
-    $_SESSION["from"] = "powerOn";
+    if($_SESSION["from"] == "powerOn") {
+        system("sudo -u jokura_banila bash /home/jokura_banila/minecraft/start.sh");
+        $_SESSION["from"] = "";
+    } elseif($_SESSION["from"] == "powerOff") {
+        system("sudo -u jokura_banila bash /home/jokura_banila/minecraft/stop.sh");
+        $_SESSION["from"] = "";
+    } else {
+        header('Location: /');
+        exit;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -29,12 +38,11 @@
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
         <div class="block"></div>
-        <div class="power_box">
-            <div class="power_title"><?php include '../assets/php/power.php'; if(power()==1){echo "サーバ停止";}else{echo "サーバ起動";};?></div>
-            <img class="power_img" src="/assets/img/power2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="power_contents">ボタン押下後，30秒程度かかりますが<br>そのままお待ちください．</div>
-            <img class="power_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <a href="/"><img class="power_no" src="/assets/img/no.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
+        <div class="restart_box">
+            <div class="restart_title">サーバ停止</div>
+            <img class="restart_img" src="/assets/img/power2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+            <div class="restart_contents">サーバに処理を送信しました．<br>まもなくサーバが停止されます．</div>
+            <a href="/"><img class="restart_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         </div>
         <div class="block"></div>
     </main>

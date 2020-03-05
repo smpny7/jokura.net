@@ -42,8 +42,9 @@
                     $data[$j] = $raw[0];
                     $j++;
                 }
+                fclose($file);
 
-                echo("<div class=\"home_container\">
+                echo("<div id=\"feed".$i."\" class=\"home_container\">
                     <img class=\"home_img\" src=\"/feed/img/feed".$i.".jpg\" alt=\"画像\" oncontextmenu=\"return false;\" onselectstart=\"return false;\" onmousedown=\"return false;\">
                     <div class=\"home_title\">".$data[0]."</div>
                     <div class=\"home_contents\">&nbsp;".mb_substr($data[3], 0, 25, "UTF-8")."&nbsp;...</div>
@@ -51,10 +52,8 @@
                         <img class=\"home_time\" src=\"/assets/img/time.png\" alt=\"画像\" oncontextmenu=\"return false;\" onselectstart=\"return false;\" onmousedown=\"return false;\">
                         <div class=\"home_time_letter\">".timeShow($data[2])."</div>
                     </div>
-                        <a class=\"home_time_detail\" href=\"/feed/feed".$i.".php\">詳細</a>
+                        <a class=\"home_time_detail\" href=\"/feed?feed=".$i."\">詳細</a>
                 </div>");
-
-                fclose($file);
             }
         ?>
 

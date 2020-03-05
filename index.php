@@ -28,116 +28,36 @@
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
         <div class="block"></div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post10.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">僻地に、建築 ～その4～</div>
-            <div class="home_contents">&nbsp;重近君と共同で港周辺を開拓するなかで、海の家っぽい...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-03-02 17:35:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed10.php">詳細</a>
-        </div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post9.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">Optifine1.15.2対応状況について</div>
-            <div class="home_contents">&nbsp;最近プレビュー版の公開頻度が高くなってきています。...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-24 13:30:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed9.php">詳細</a>
-        </div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post8.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">僻地に、建築 ～その3～</div>
-            <div class="home_contents">&nbsp;今回は、高架下のカフェと薬局を製作しましたー。...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-23 21:00:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed8.php">詳細</a>
-        </div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post7.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">僻地に、建築 ～その2～</div>
-            <div class="home_contents">&nbsp;一昨日建てた倉庫の南に、コンテナ港を作ってみました。...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-18 12:45:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed7.php">詳細</a>
-        </div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post6.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">僻地に建設 ～その１～</div>
-            <div class="home_contents">&nbsp;Youtubeの動画を参考(もろパクリ)して作りましたー ...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-17 00:00:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed6.php">詳細</a>
-        </div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post5.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">砂の城前駅、完成</div>
-            <div class="home_contents">&nbsp;8月に土を削って禿げていた土地を有効活用し、磨かれ...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-16 15:15:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed5.php">詳細</a>
-        </div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post4.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">機能拡張のお知らせ</div>
-            <div class="home_contents">&nbsp;以下の機能が使えるようになりました。...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-15 17:00:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed4.php">詳細</a>
-        </div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post3.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">採掘場完成のお知らせ</div>
-            <div class="home_contents">&nbsp;Discordでも告知したのですが、砂の城付近(x=-20,z=-410)...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-14 23:35:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed3.php">詳細</a>
-        </div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">Windows 7 サポート終了のお知らせ</div>
-            <div class="home_contents">&nbsp;マイクラサーバは2020/1/15 0:00(GMT+9:00)以降、Wi...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-14 13:30:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed2.php">詳細</a>
-        </div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post1.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">レスポンシブ対応</div>
-            <div class="home_contents">&nbsp;PC・スマートフォンからのアクセスに対応しました。動作確認済みブラウザは，Google&nbsp;Chrome・Microsoft&nbsp;E...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-10 10:50:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed1.php">詳細</a>
-        </div>
-        <div class="home_container">
-            <img class="home_img" src="/assets/img/post0.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="home_title">Webサーバ稼働のお知らせ</div>
-            <div class="home_contents">&nbsp;以下の一部機能に限定して、ゲームサーバ機能を先行公開したいと思います。...</div>
-            <div class="home_time_container">
-                <img class="home_time" src="/assets/img/time.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="home_time_letter"><?php echo timeShow("2020-02-07 22:30:00");?></div>
-            </div>
-                <a class="home_time_detail" href="/feed/feed0.php">詳細</a>
-        </div>
+
+        <?php
+            $result = glob('./feed/csv/*');
+            foreach (array_reverse($result) as $raw) {
+                $count++;
+            }
+
+            for($i=$count-1;$i>=0;$i--) {
+                $file = fopen("./feed/csv/feed".$i.".csv", "r");
+                $j=0;
+                while($raw = fgetcsv($file)){
+                    $data[$j] = $raw[0];
+                    $j++;
+                }
+
+                echo("<div class=\"home_container\">
+                    <img class=\"home_img\" src=\"/feed/img/feed".$i.".jpg\" alt=\"画像\" oncontextmenu=\"return false;\" onselectstart=\"return false;\" onmousedown=\"return false;\">
+                    <div class=\"home_title\">".$data[0]."</div>
+                    <div class=\"home_contents\">&nbsp;".mb_substr($data[3], 0, 25, "UTF-8")."&nbsp;...</div>
+                    <div class=\"home_time_container\">
+                        <img class=\"home_time\" src=\"/assets/img/time.png\" alt=\"画像\" oncontextmenu=\"return false;\" onselectstart=\"return false;\" onmousedown=\"return false;\">
+                        <div class=\"home_time_letter\">".timeShow($data[2])."</div>
+                    </div>
+                        <a class=\"home_time_detail\" href=\"/feed/feed".$i.".php\">詳細</a>
+                </div>");
+
+                fclose($file);
+            }
+        ?>
+
         <div class="block"></div>
         <div class="pagetop">↑</div>
     </main>

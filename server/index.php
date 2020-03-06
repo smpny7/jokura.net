@@ -14,7 +14,7 @@
     <link rel="icon" href="/assets/icon/icon.ico">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/server.css">
-    <?php require __DIR__ . '/../assets/php/tool/power.php';
+    <?php require __DIR__ . '/../assets/php/check/powerCheck.php';
         if(power()){echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		    <script type="text/javascript" src="/assets/js/serverRefresh.js"></script>';}?>
 </head>

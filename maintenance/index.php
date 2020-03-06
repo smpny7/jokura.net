@@ -1,9 +1,6 @@
 <?php
-    include '../assets/php/maintenance.php';
-    if(!state()) {
-        header('Location: /');
-        exit;
-    }
+    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    maintenanceFinishCheck();
 ?>
 
 <!DOCTYPE html>

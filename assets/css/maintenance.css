@@ -1,31 +1,10 @@
 @charset "utf-8";
 @import url("/assets/css/common.css");
-
-header {
-    background-color: #2699fb;
-    height: 61px;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-}
-
-.header_title {
-    color: #ffffff;
-    font-size: 120%;
-    font-weight: bold;
-    left: 0;
-    margin: 0 auto;
-    position: fixed;
-    right: 0;
-    top: 25px;
-}
+@import url("/assets/css/menu.css");
+@import url("/assets/css/header.css");
 
 .header_title::before {
     content: "メンテナンス中";
-}
-
-.block {
-    height: 40px;
 }
 
 .maintenance_box {
@@ -48,6 +27,7 @@ header {
 .maintenance_img {
     margin-top: 70px;
     width: 65vw;
+
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
 }
@@ -65,4 +45,32 @@ header {
     font-family: Arial;
     font-size: 12px;
     margin-top: 85px;
+}
+
+@media screen and (min-width: 600px) {
+    .maintenance_box {
+        height: 800px;
+        margin: 100px auto 0;
+        width: 775px;
+    }
+
+    .maintenance_title {
+        font-size: 45px;
+        margin-top: 90px;
+    }
+
+    .maintenance_img {
+        margin-top: 100px;
+        width: 600px;
+    }
+
+    .maintenance_contents {
+        font-size: 30px;
+        margin-top: 80px;
+    }
+
+    .maintenance_copyright {
+        font-size: 16px;
+        margin-top: 90px;
+    }
 }

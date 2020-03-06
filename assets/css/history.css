@@ -7,10 +7,6 @@
     content: "バックアップ履歴";
 }
 
-.block {
-    height: 40px;
-}
-
 div[class*="history_box_"] {
     background-color: #ffffffad;
     border: solid 1px #2699fb;

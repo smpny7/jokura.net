@@ -1,11 +1,8 @@
 <?php
-    include './assets/php/maintenance.php';
-    if(state() && !isset($_GET['root'])) {
-        header('Location: /maintenance');
-        exit;
-    }
+    require __DIR__ . '/assets/php/check/maintenanceCheck.php';
+    maintenanceCheck();
 
-    include './assets/php/time.php';
+    require __DIR__ . '/assets/php/tool/time.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +19,8 @@
 </head>
 
 <body>
-    <?php include './assets/php/header.php'?>
+    <?php require __DIR__ . '/assets/php/component/menu.php' ?>
+    <?php require __DIR__ . '/assets/php/component/header.php'?>
 
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
@@ -56,12 +54,10 @@
                 </div>");
             }
         ?>
+        <div class="pagetop">↑</div>
 
         <div class="block"></div>
-        <div class="pagetop">↑</div>
     </main>
-
-    <?php include './assets/php/menu.php' ?>
     <script type="text/javascript" src="/assets/js/pageTop.js"></script>
 </body>
 </html>

@@ -1,9 +1,7 @@
 <?php
-    include '../assets/php/maintenance.php';
-    if(state() && !isset($_GET['root'])) {
-        header('Location: /maintenance');
-        exit;
-    }
+    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    maintenanceCheck();
+
     if(!isset($_GET['feed'])) {
         header('Location: /');
         exit;

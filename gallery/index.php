@@ -1,11 +1,6 @@
 <?php
-
-include '../assets/php/maintenance.php';
-if(state() && !isset($_GET['root'])) {
-    header('Location: /maintenance');
-    exit;
-}
-
+    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    maintenanceCheck();
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +17,8 @@ if(state() && !isset($_GET['root'])) {
 </head>
 
 <body>
-    <?php include '../assets/php/header.php'?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
+    <?php require __DIR__ . '/../assets/php/component/header.php'?>
 
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
@@ -40,7 +36,5 @@ if(state() && !isset($_GET['root'])) {
         <a href="upload.php"><img class="gallery_new" src="/assets/img/galleryNew.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         <div class="block"></div>
     </main>
-
-    <?php include '../assets/php/menu.php' ?>
 </body>
 </html>

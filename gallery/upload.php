@@ -1,59 +1,42 @@
 <?php
+    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    maintenanceCheck();
 
-include '../assets/php/maintenance.php';
-if(state() && !isset($_GET['root'])) {
-    header('Location: /maintenance');
-    exit;
-}
+    $errorMessage = "";
 
-$errorMessage = "";
-
-if (isset($_POST['galleryState'])) {
-    if (empty($_POST['galleryPhotographer'])) {
-        $errorMessage = 'MinecraftIDが未入力です。';
-    } else if (!is_uploaded_file($_FILES['galleryPhoto']['tmp_name'])) {
-        $errorMessage = 'ファイルを未選択です。';
-    }
-
-
-    //img ファイル　パーミッション　777
-
-    // 入力文字審査
-    // if (!empty($_POST["galleryUpload"]) && !empty($_POST["galleryPhoto"])) 
-    else {
-
-        $result = glob('./img/*');
-        foreach ($result as $raw) {
-            $num = str_pad(mb_substr(ltrim($raw, './img/'), 0, 3)+1, 3, '0', STR_PAD_LEFT);
-        }
-
-        //拡張子判別
-        $mimetype  = mime_content_type($_FILES['galleryPhoto']['tmp_name']);
-        $extension = array_search($mimetype, [
-            'jpg' => 'image/jpeg', 'png' => 'image/png', 'gif' => 'image/gif',
-        ]);
-
-        if (false !== $extension) {
-            $upfile = $num.'-'.$_POST['galleryPhotographer'].'.'.$extension;  //固定アップロードファイル名（拡張子自動補完）
-            $uppath = './img/'.$upfile;
-
-            //アップロードファイル移動、上書き
-            if (move_uploaded_file($_FILES["galleryPhoto"]["tmp_name"], $uppath)) {
-                // chmod($uppath, 0644);
-
-                $errorMessage =  $upfile . "をアップロードしました。";
-                // $_SESSION["from"] = "galleryUpload";
-                header("Location: index.php");
-                exit();
-
-            } else {
-                $errorMessage =  "ファイルをアップロードできません。";
-            }
+    if (isset($_POST['galleryState'])) {
+        if (empty($_POST['galleryPhotographer'])) {
+            $errorMessage = 'MinecraftIDが未入力です。';
+        } else if (!is_uploaded_file($_FILES['galleryPhoto']['tmp_name'])) {
+            $errorMessage = 'ファイルを未選択です。';
         } else {
-            $errorMessage =  $mimetype.'のファイル形式はアップロードできません。JPEG・PNG・GIFの画像のみアップロードできます。';
+
+            $result = glob('./img/*');
+            foreach ($result as $raw) {
+                $num = str_pad(mb_substr(ltrim($raw, './img/'), 0, 3)+1, 3, '0', STR_PAD_LEFT);
+            }
+
+            $mimetype  = mime_content_type($_FILES['galleryPhoto']['tmp_name']);
+            $extension = array_search($mimetype, [
+                'jpg' => 'image/jpeg', 'png' => 'image/png', 'gif' => 'image/gif',
+            ]);
+
+            if (false !== $extension) {
+                $upfile = $num.'-'.$_POST['galleryPhotographer'].'.'.$extension;
+                $uppath = './img/'.$upfile;
+
+                if (move_uploaded_file($_FILES["galleryPhoto"]["tmp_name"], $uppath)) {
+                    $errorMessage =  $upfile . "をアップロードしました。";
+                    header("Location: index.php");
+                    exit();
+                } else {
+                    $errorMessage =  "ファイルをアップロードできません。";
+                }
+            } else {
+                $errorMessage =  $mimetype.'のファイル形式はアップロードできません。JPEG・PNG・GIFの画像のみアップロードできます。';
+            }
         }
     }
-}
 
 ?>
 
@@ -71,7 +54,8 @@ if (isset($_POST['galleryState'])) {
 </head>
 
 <body>
-    <?php include '../assets/php/header.php'?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
+    <?php require __DIR__ . '/../assets/php/component/header.php'?>
 
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
@@ -87,7 +71,5 @@ if (isset($_POST['galleryState'])) {
         </form>
         <div class="block"></div>
     </main>
-
-    <?php include '../assets/php/menu.php' ?>
 </body>
 </html>

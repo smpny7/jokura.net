@@ -19,17 +19,18 @@
 .gallery_img {
     width: 98vw;
     filter: drop-shadow(0px 0px 10px #97c8ffcc);
+
     -webkit-filter: drop-shadow(0px 3px 10px #97c8ffcc);
 }
 
 .gallery_photographer {
+    bottom: 13px;
     color: #2699FB;
     font-family: Arial;
     font-size: 10px;
-    text-align: right;
     position: relative;
-    bottom: 13px;
     right: 2px;
+    text-align: right;
 }
 
 .gallery_post {
@@ -50,10 +51,11 @@
 }
 
 .gallery_new {
-    position: fixed;
     bottom: 12px;
+    position: fixed;
     right: 10px;
     width: 50px;
+
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
 }
@@ -65,17 +67,14 @@
     }
 
     .gallery_photographer {
-        font-size: 14px;
         bottom: 19px;
+        font-size: 14px;
         right: 6px;
     }
 
     .gallery_new {
-        right: 5vw;
         bottom: 3vh;
+        right: 5vw;
         width: 70px;
-        /* left: 70vw; */
-        /* margin: 0 auto; */
-        /* padding-left: 100px; */
     }
 }

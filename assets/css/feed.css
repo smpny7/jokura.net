@@ -7,10 +7,6 @@
     content: "ホーム";
 }
 
-.block {
-    height: 40px;
-}
-
 .feed_container {
     background-color: #ffffffad;
     border: solid 1px #2699fb;
@@ -29,6 +25,7 @@
     top: 15px;
     vertical-align: middle;
     width: 34px;
+
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
 }
@@ -97,6 +94,7 @@
     height: 220px;
     margin: 30px auto 0;
     width: 330px;
+
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
 }
@@ -114,121 +112,76 @@
 
 @media screen and (min-width: 600px) {
     .feed_container {
-        /* background-color: #ffffffad; */
-        /* border: solid 1px #2699fb; */
-        /* margin: 0 auto 30px; */
-        /* padding: 30px 0; */
-        /* position: static; */
-        /* text-align: left; */
         margin-top: 40px;
         width: 775px;
     }
 
     .feed_container a {
-        /* background-color: lightcoral; */
-        /* display: inline-block; */
         height: 34px;
         left: 25px;
-        /* position: relative; */
-        top: 15px;
-        /* vertical-align: middle; */
-        width: 34px;
-        /* -webkit-tap-highlight-color: #00000000; */
-        /* -webkit-touch-callout: none; */
         position: relative;
+        top: 15px;
+        width: 34px;
         z-index: 4;
     }
 
     .feed_back {
-        /* display: inline-block; */
         height: 50px;
         left: 30px;
         position: absolute;
         top: 40px;
-        /* vertical-align: middle; */
         width: 50px;
-        /* -webkit-tap-highlight-color: #00000000; */
-        /* -webkit-touch-callout: none; */
     }
 
     .feed_title {
-        /* color: #2699fb; */
-        /* display: inline-block; */
-        /* font-family: Arial; */
         font-size: 36px;
-        /* font-weight: bold; */
         left: 5%;
-        /* position: relative; */
-        /* text-align: center; */
         top: 66px;
-        /* vertical-align: middle; */
         width: 95%;
     }
 
     .feed_author_container {
         margin-left: 530px;
         margin-top: 90px;
-        /* position: static; */
         width: 180px;
     }
 
     .feed_author {
-        /* margin-left: 10px; */
         vertical-align: middle;
         width: 22px;
     }
 
     .feed_author_letter {
-        /* color: #0088ff; */
-        /* display: inline-block; */
         font-size: 20px;
         margin-left: 0px;
-        /* text-align: center; */
         vertical-align: middle;
         width: 140px;
     }
 
     .feed_time_container {
         margin-left: 530px;
-        /* margin-top: 8px; */
-        /* position: static; */
         width: 180px;
     }
 
     .feed_time {
-        /* margin-left: 10px; */
         vertical-align: middle;
         width: 22px;
     }
 
     .feed_time_letter {
-        /* color: #0088ff; */
-        /* display: inline-block; */
         font-size: 19px;
         margin-left: 0;
-        /* text-align: center; */
         vertical-align: middle;
         width: 140px;
     }
 
     .feed_img {
-        /* background-color: #bce0fd; */
-        /* display: block; */
         height: 440px;
-        /* margin: 30px auto 0; */
         width: 660px;
-        /* -webkit-tap-highlight-color: #00000000; */
-        /* -webkit-touch-callout: none; */
     }
 
     .feed_contents {
-        /* color: #2699fb; */
-        /* font-family: Arial; */
         font-size: 23px;
         font-weight: normal;
-        /* line-height: 1.5; */
-        /* margin: 40px auto 0; */
-        /* text-align: left; */
-        /* width: 80%; */
     }
 }

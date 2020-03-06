@@ -7,7 +7,7 @@ $(document).ready(function(){
 });
 
 function refresh_working(){
-    $('#server_text_1').load('/assets/php/server/working.php', function(){
+    $('#server_text_1').load('/assets/php/component/working.php', function(){
         var state = document.getElementById('server_text_1').innerHTML;
         if(state=='正常です') {
             server_working.setAttribute('src', '/assets/img/working.png');
@@ -17,24 +17,24 @@ function refresh_working(){
 }
 
 function refresh_domain(){
-    $('#server_text_2').load('/assets/php/server/domain.php', function(){
+    $('#server_text_2').load('/assets/php/component/domain.php', function(){
         setTimeout(refresh_domain,5000);
     });
 }
 
 function refresh_online(){
-    $('#server_text_4').load('/assets/php/server/online.php', function(){
+    $('#server_text_4').load('/assets/php/component/online.php', function(){
         setTimeout(refresh_online,5000);
     });
 }
 
 function refresh_version(){
-    $('#server_text_6').load('/assets/php/server/version.php', function(){
+    $('#server_text_6').load('/assets/php/component/version.php', function(){
         setTimeout(refresh_version,5000);
     });
 }
 
 function refresh_rcon(){
-    $('#server_text_8').load('/assets/php/server/rcon.php', function(){
+    $('#server_text_8').load('/assets/php/component/rcon.php', function(){
     });
 }

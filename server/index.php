@@ -1,9 +1,6 @@
 <?php
-    include '../assets/php/maintenance.php';
-    if(state() && !isset($_GET['root'])) {
-        header('Location: /maintenance');
-        exit;
-    }
+    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    maintenanceCheck();
 ?>
 
 <!DOCTYPE html>
@@ -17,12 +14,14 @@
     <link rel="icon" href="/assets/icon/icon.ico">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/server.css">
-    <?php include '../assets/php/server.php'?>
+    <?php require __DIR__ . '/../assets/php/tool/power.php';
+        if(power()){echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		    <script type="text/javascript" src="/assets/js/serverRefresh.js"></script>';}?>
 </head>
 
 <body>
-    <?php include '../assets/php/header.php'?>
-
+    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
+    <?php require __DIR__ . '/../assets/php/component/header.php'?>
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
@@ -34,7 +33,5 @@
         <div class="server_box5"><div id="server_text_8">- - - - -</div><div id="server_text_9">RCON</div></div>
         <div class="block"></div>
     </main>
-
-    <?php include '../assets/php/menu.php' ?>
 </body>
 </html>

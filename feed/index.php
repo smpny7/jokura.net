@@ -7,16 +7,7 @@
         exit;
     }
 
-    include '../assets/php/time.php';
-
-    $file = fopen("./csv/feed".$_GET['feed'].".csv", "r");
-    $i=0;
-    while($raw = fgetcsv($file)){
-        $feed[$i] = $raw[0];
-        $i++;
-    }
-    fclose($file);
-
+    require __DIR__ . '/../assets/php/tool/time.php';
 ?>
 
 <!DOCTYPE html>
@@ -33,9 +24,19 @@
 </head>
 
 <body>
-    <?php include '../assets/php/header.php'?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
+    <?php require __DIR__ . '/../assets/php/component/header.php'?>
 
     <main>
+        <?php
+            $file = fopen("./csv/feed".$_GET['feed'].".csv", "r");
+            $i=0;
+            while($raw = fgetcsv($file)){
+                $feed[$i] = $raw[0];
+                $i++;
+            }
+            fclose($file);
+        ?>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
         <div class="feed_container">
             <a href="/#feed<?php echo $_GET['feed']?>"><img class="feed_back" src="/assets/img/back.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
@@ -52,7 +53,5 @@
             <div class="feed_contents">&nbsp;<?php echo $feed[3]?></div>
         </div>
     </main>
-
-    <?php include '../assets/php/menu.php' ?>
 </body>
 </html>

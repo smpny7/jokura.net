@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <?php require __DIR__ . '/../assets/php/component/menu.php' ?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
     <?php require __DIR__ . '/../assets/php/component/header.php'?>
 
     <main>

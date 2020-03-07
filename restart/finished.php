@@ -4,9 +4,17 @@
 
     session_start();
     if($_SESSION["from"] == "restart") {
-        // system("sudo -u jokura_banila bash /home/jokura_banila/minecraft/restart.sh");
-        $_SESSION["from"] = "";
+        require __DIR__ . '/../assets/php/check/processCheck.php';
+        if (processCheck()) {
+            // readfile("http://jokura-vanila.work/src/restart.php?from=jokura.net");
+            echo "HELLO";
+        } else {
+            $_SESSION["from"] = "";
+            header('Location: /no');
+            exit;
+        }
     } else {
+        $_SESSION["from"] = "";
         header('Location: /');
         exit;
     }

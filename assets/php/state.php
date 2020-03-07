@@ -1,5 +1,5 @@
 <?php
-    $maintenanceMode = 1;
+    $maintenanceMode = 0;
     $maintenanceDateFrom = '2020.02.07';
     $maintenanceTimeFrom = '16:30';
     $maintenanceDateTo = '2020.02.08';

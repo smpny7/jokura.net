@@ -3,7 +3,7 @@
     maintenanceCheck();
 
     require __DIR__ . '/../assets/php/check/powerCheck.php';
-    if (power()!=1) {
+    if (power() == 0) {
         header('Location: unavailable.php');
     }
 

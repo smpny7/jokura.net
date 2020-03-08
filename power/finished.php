@@ -1,20 +1,28 @@
 <?php
-    session_start();
-    include '../assets/php/maintenance.php';
-    if(state() && !isset($_GET['root'])) {
-        header('Location: /maintenance');
-        exit;
-    }
+    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    maintenanceCheck();
 
+    session_start();
     if($_SESSION["from"] == "powerOn") {
-        // system("sudo -u jokura_banila bash /home/jokura_banila/minecraft/start.sh");
-        echo("powerOn");
-        $_SESSION["from"] = "";
-    } elseif($_SESSION["from"] == "powerOff") {
-        // system("sudo -u jokura_banila bash /home/jokura_banila/minecraft/stop.sh");
-        echo("powerOff");
-        $_SESSION["from"] = "";
+        require __DIR__ . '/../assets/php/check/processCheck.php';
+        if (processCheck()) {
+            readfile("http://jokura-vanila.work/src/powerOn.php?from=jokura.net");
+        } else {
+            $_SESSION["from"] = "";
+            header('Location: /processReject');
+            exit;
+        }
+    } else if($_SESSION["from"] == "powerOff") {
+        require __DIR__ . '/../assets/php/check/processCheck.php';
+        if (processCheck()) {
+            readfile("http://jokura-vanila.work/src/powerOff.php?from=jokura.net");
+        } else {
+            $_SESSION["from"] = "";
+            header('Location: /processReject');
+            exit;
+        }
     } else {
+        $_SESSION["from"] = "";
         header('Location: /');
         exit;
     }
@@ -34,21 +42,20 @@
 </head>
 
 <body>
-    <?php include '../assets/php/header.php'?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
+    <?php require __DIR__ . '/../assets/php/component/header.php'?>
 
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
         <div class="block"></div>
         <div class="power_box">
-            <div class="power_title">サーバ停止</div>
+            <div class="power_title">サーバ<?php require __DIR__ . '/../assets/php/check/powerCheck.php'; if(power()==1){echo "停止";}else{echo "起動";}?></div>
             <img class="power_img" src="/assets/img/power2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="power_contents">サーバに処理を送信しました．<br>まもなくサーバが停止されます．</div>
+            <div class="power_contents">サーバに処理を送信しました．<br>まもなくサーバが<?php if(power()==1){echo "停止";}else{echo "起動";}?>されます．</div>
             <a href="/"><img class="power_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         </div>
         <div class="block"></div>
     </main>
-
-    <?php include '../assets/php/menu.php' ?>
 </body>
 </html>

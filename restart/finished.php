@@ -2,6 +2,11 @@
     require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
     maintenanceCheck();
 
+    require __DIR__ . '/../assets/php/check/powerCheck.php';
+    if (power()!=1) {
+        header('Location: unavailable.php');
+    }
+
     session_start();
     if($_SESSION["from"] == "restart") {
         require __DIR__ . '/../assets/php/check/processCheck.php';

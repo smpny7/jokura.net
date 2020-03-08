@@ -27,4 +27,14 @@
             }
         }
     }
+
+    function processTime() {
+        $file = __DIR__ . '/temp/processing.txt';
+
+        if (strtotime(date('Y-m-d H:i:s')) - strtotime(readTime($file)) < 90) {
+            return 90 - (strtotime(date('Y-m-d H:i:s')) - strtotime(readTime($file)));
+        } else {
+            return "--";
+        }
+    }
 ?>

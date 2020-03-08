@@ -27,9 +27,8 @@
         <div class="restart_box">
             <div class="restart_title">プロセス拒否</div>
             <!-- <img class="restart_img" src="/assets/img/restart2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"> -->
-            <div class="restart_contents">サーバ処理中・処理後90秒間は<br>サーバー操作が禁止されています。<br><br>操作可能まで、あと<?php require __DIR__ . '/../assets/php/check/processCheck.php'; echo processTime()?>秒です。</div>
+            <div class="restart_contents">サーバが起動していないため<br>再起動が実行できませんでした。</div>
             <a href="/"><img class="restart_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
-        </div>
         </div>
         <div class="block"></div>
     </main>

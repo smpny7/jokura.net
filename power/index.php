@@ -1,10 +1,8 @@
 <?php
+    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    maintenanceCheck();
+
     session_start();
-    include '../assets/php/maintenance.php';
-    if(state() && !isset($_GET['root'])) {
-        header('Location: /maintenance');
-        exit;
-    }
 ?>
 
 <!DOCTYPE html>
@@ -21,16 +19,17 @@
 </head>
 
 <body>
-    <?php include '../assets/php/header.php'?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
+    <?php require __DIR__ . '/../assets/php/component/header.php'?>
 
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
         <div class="block"></div>
         <div class="power_box">
-            <div class="power_title"><?php include '../assets/php/power.php'; if(power()==1){echo "サーバ停止";$_SESSION["from"] = "powerOff";}else{echo "サーバ起動";$_SESSION["from"] = "powerOn";}?></div>
+            <div class="power_title"><?php require __DIR__ . '/../assets/php/check/powerCheck.php'; if(power()==1){echo "サーバ停止";$_SESSION["from"] = "powerOff";}else{echo "サーバ起動";$_SESSION["from"] = "powerOn";}?></div>
             <img class="power_img" src="/assets/img/power2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="power_contents">ボタン押下後，<?php if(power()==1){echo "30";}else{echo "10";}?>秒程度かかりますが<br>そのままお待ちください．</div>
+            <div class="power_contents"><?php if(power()==1){echo "停止";}else{echo "起動";}?>には、<?php if(power()==1){echo "30";}else{echo "50";}?>秒程度かかります。<br>よろしいですか？</div>
             <a id="submit" href="finished.php"><img id="yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script type="text/javascript" src="/assets/js/doubleTap.js"></script>
@@ -38,7 +37,5 @@
         </div>
         <div class="block"></div>
     </main>
-
-    <?php include '../assets/php/menu.php' ?>
 </body>
 </html>

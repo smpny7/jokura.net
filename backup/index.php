@@ -1,11 +1,8 @@
 <?php
-    session_start();
-    include '../assets/php/maintenance.php';
-    if(state() && !isset($_GET['root'])) {
-        header('Location: /maintenance');
-        exit;
-    }
+    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    maintenanceCheck();
 
+    session_start();
     $_SESSION["from"] = "backup";
 ?>
 
@@ -23,8 +20,8 @@
 </head>
 
 <body>
-    <?php include '../assets/php/header.php'?>
-
+    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
+    <?php require __DIR__ . '/../assets/php/component/header.php'?>
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
@@ -32,7 +29,7 @@
         <div class="backup_box">
             <div class="backup_title">バックアップ</div>
             <img class="backup_img" src="/assets/img/backup2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="backup_contents">ボタン押下後，30秒程度かかりますが<br>そのままお待ちください．</div>
+            <div class="backup_contents">再起動には、90秒程度かかります。<br>よろしいですか？</div>
             <a id="submit" href="finished.php"><img id="yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script type="text/javascript" src="/assets/js/doubleTap.js"></script>
@@ -40,7 +37,5 @@
         </div>
         <div class="block"></div>
     </main>
-
-    <?php include '../assets/php/menu.php' ?>
 </body>
 </html>

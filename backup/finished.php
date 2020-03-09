@@ -1,15 +1,24 @@
 <?php
-    session_start();
-    include '../assets/php/maintenance.php';
-    if(state() && !isset($_GET['root'])) {
-        header('Location: /maintenance');
-        exit;
+    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    maintenanceCheck();
+
+    require __DIR__ . '/../assets/php/check/powerCheck.php';
+    if (power() == 0) {
+        header('Location: unavailable.php');
     }
 
+    session_start();
     if($_SESSION["from"] == "backup") {
-        system("sudo -u jokura_banila bash /home/jokura_banila/minecraft/backup.sh");
-        $_SESSION["from"] = "";
+        require __DIR__ . '/../assets/php/check/processCheck.php';
+        if (processCheck()) {
+            readfile("http://jokura-vanila.work/src/backup.php?from=jokura.net");
+        } else {
+            $_SESSION["from"] = "";
+            header('Location: /processReject');
+            exit;
+        }
     } else {
+        $_SESSION["from"] = "";
         header('Location: /');
         exit;
     }
@@ -29,7 +38,8 @@
 </head>
 
 <body>
-    <?php include '../assets/php/header.php'?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
+    <?php require __DIR__ . '/../assets/php/component/header.php'?>
 
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
@@ -38,12 +48,10 @@
         <div class="backup_box">
             <div class="backup_title">バックアップ</div>
             <img class="backup_img" src="/assets/img/backup2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="backup_contents">バックアップが完了しました．<br>まもなくサーバの起動を開始します．</div>
+            <div class="backup_contents">サーバに処理を送信しました。<br>まもなくバックアップが実行されます。</div>
             <a href="/"><img class="backup_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         </div>
         <div class="block"></div>
     </main>
-
-    <?php include '../assets/php/menu.php' ?>
 </body>
 </html>

@@ -26,7 +26,7 @@
         <div class="block"></div>
         <div class="restart_box">
             <div class="restart_title">プロセス拒否</div>
-            <!-- <img class="restart_img" src="/assets/img/restart2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"> -->
+            <img class="restart_img" src="/assets/img/processReject.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             <div class="restart_contents">サーバが起動していないため<br>再起動が実行できませんでした。</div>
             <a href="/"><img class="restart_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         </div>

@@ -166,7 +166,7 @@ img[class*="menu_icon_"] {
     width: 20px;
     display: inline-block;
     vertical-align: middle;
-    padding: 14px 0;
+    padding: 13.5px 0;
     margin-left: 30px;
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
@@ -177,7 +177,7 @@ div[class*="menu_text_"] {
     vertical-align: middle;
     font-size: 12px;
     font-family: Arial;
-    padding: 14px 0;
+    padding: 13.5px 0;
     margin-left: 20px;
     color: #ffffff;
     font-weight: bold;

@@ -21,6 +21,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="wlAR5BRt28c3PUSeriNwNjI2wz7kHyGtyk06Y3ohOZQ"/>
+    <meta name=”description” content=”Minecraftサーバ（情クラ）の管理を行う、会員用サイトです。”>
     <title>情クラサーバ</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
     <link rel="icon" href="/assets/icon/icon.ico">

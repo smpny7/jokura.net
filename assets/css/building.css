@@ -10,8 +10,10 @@
 .city_container {
     background-color: #ffffff8f;
     border: solid 1px #2699fb;
-    height: 332px;
+    /* height: 332px; */
+    height: fit-content;
     margin-top: 6px;
+    padding-bottom: 21.5px;
     width: 100vw;
 }
 
@@ -33,82 +35,45 @@
     font-size: 24px;
     font-weight: bold;
     left: 0;
+    margin-left: 20px;
     margin-top: 32px;
     position: absolute;
     right: 0;
 }
-/*
-.city_update {
-    color: #2699fb;
-    font-family: Arial;
-    font-size: 12px;
-    margin-top: 65px;
-    position: absolute;
-    right: 9px;
-    text-align: center;
-} */
 
 .city_img {
     height: 222px;
-    margin-top: 87px;
+    margin: 87px auto 43.5px;
 
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
 }
 
-.city_list_a {
-    -webkit-tap-highlight-color: #00000000;
-    -webkit-touch-callout: none;
-}
-
-.city_list_container {
-    background-color: #ffffff8f;
+.city_bar {
     border: solid 1px #2699fb;
-    height: 110px;
-    left: 0;
-    margin: 20px auto 0;
-    position: relative;
-    right: 0;
-    width: 97vw;
-}
-
-.city_list_img {
-    height: 108px;
-    left: 0;
-    position: absolute;
+    margin: 0 auto;
+    width: 325px;
 }
 
 .city_list_title {
-    bottom: 0;
-    color: #2699fb;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: bold;
-    height: fit-content;
-    left: 200px;
-    margin: auto 0;
-    position: absolute;
-    text-align: left;
-    top: 0;
-    width: 153px;
-}
-
-.city_list_detail_container {
-    bottom: 8px;
-    left: 220px;
-    position: absolute;
-}
-
-.city_list_detail_text {
     color: #2699fb;
     display: inline-block;
     font-family: Arial;
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 8.5px 0;
+    vertical-align: top;
+    width: 110px;
 }
 
-.city_list_detail_img {
+.city_list_content {
+    color: #2699fb;
     display: inline-block;
-    width: 10px;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 8.5px 0;
+    width: 200px;
 }
 
 @media screen and (min-width: 600px) {

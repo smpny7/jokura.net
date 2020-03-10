@@ -2,16 +2,18 @@
     require __DIR__ . '/../../assets/php/check/maintenanceCheck.php';
     maintenanceCheck();
 
-    $file = fopen("./csv/".$_GET['name'].".csv", "r");
-    $i=0; $j=0;
-    while($line = fgetcsv($file)){
-        foreach ($line as $raw) {
-            $city[$i][$j] = $raw;
-            $j++;
-        }
-        $j=0; $i++;
-    }
-    fclose($file);
+    require __DIR__ . '/../../assets/php/component/regionName.php';
+
+    // $file = fopen("../others/csv/".$_GET['region'].".csv", "r");
+    // $i=0; $j=0;
+    // while($line = fgetcsv($file)){
+    //     foreach ($line as $raw) {
+    //         $city[$i][$j] = $raw;
+    //         $j++;
+    //     }
+    //     $j=0; $i++;
+    // }
+    // fclose($file);
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +31,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>マップ（<?php echo $city[0][0]?>）</title>
+    <title>マップ（<?php echo regionName($_GET['region'])?>）</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
     <link rel="icon" href="/assets/icon/icon.ico">
     <link rel="stylesheet" href="/assets/css/reset.css">
@@ -45,43 +47,36 @@
 
         <div class="city_container">
             <a href="/map"><img class="city_back" src="/assets/img/back.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
-            <div class="city_title"><?php echo $city[0][0]?></div>
-            <div class="city_update"><?php echo $city[0][1]?>&nbsp;更新</div>
-            <img class="city_img" src="/map/city/img/<?php echo $_GET['name']."/".$city[0][2]?>" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+            <div class="city_title"><?php echo regionName($_GET['region'])?></div>
+            <img class="city_img" src="/map/others/<?php echo $_GET['region']."/".$_GET['region']?>_Top.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
         </div>
 
-        <a href="/map/building/?name=<?php echo $city[1][1]?>" class="city_list_a">
-            <div class="city_list_container">
-                <img class="city_list_img" src="/map/city/img/<?php echo $_GET['name']."/".$city[1][2]?>" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="city_list_title"><?php echo $city[1][0]?></div>
-                <div class="city_list_detail_container">
-                    <div class="city_list_detail_text">詳細を見る</div>
-                    <img class="city_list_detail_img" src="/assets/img/next.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                </div>
-            </div>
-        </a>
+        <?php
+            $result = glob('../others/'.$_GET['region'].'/*.csv');
+            foreach ($result as $raw) {
+                $str = "../others/".$_GET['region']."/";
+                $raw = str_replace('.csv', '', str_replace($str, '', $raw));
 
-        <a href="/map/building/?name=<?php echo $city[1][1]?>" class="city_list_a">
-            <div class="city_list_container">
-                <img class="city_list_img" src="/map/city/img/<?php echo $_GET['name']."/".$city[1][2]?>" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="city_list_title"><?php echo $city[1][0]?></div>
-                <div class="city_list_detail_container">
-                    <div class="city_list_detail_text">詳細を見る</div>
-                    <img class="city_list_detail_img" src="/assets/img/next.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                </div>
-            </div>
-        </a>
+                $file = fopen("../others/".$_GET['region']."/".$raw.".csv", "r");
+                $i=0;
+                while($line = fgetcsv($file)){
+                    $data[$i] = $line[0];
+                    $i++;
+                }
+                fclose($file);
 
-        <a href="/map/building/?name=<?php echo $city[1][1]?>" class="city_list_a">
-            <div class="city_list_container">
-                <img class="city_list_img" src="/map/city/img/<?php echo $_GET['name']."/".$city[1][2]?>" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                <div class="city_list_title"><?php echo $city[1][0]?></div>
-                <div class="city_list_detail_container">
-                    <div class="city_list_detail_text">詳細を見る</div>
-                    <img class="city_list_detail_img" src="/assets/img/next.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-                </div>
-            </div>
-        </a>
+                echo("<a href=\"/map/building/?region=".$_GET['region']."&name=".$raw."\" class=\"city_list_a\">
+                        <div class=\"city_list_container\">
+                            <img class=\"city_list_img\" src=\"/map/others/".$_GET['region']."/".$data[1]."\" alt=\"画像\" oncontextmenu=\"return false;\" onselectstart=\"return false;\" onmousedown=\"return false;\">
+                            <div class=\"city_list_title\">".$data[0]."</div>
+                            <div class=\"city_list_detail_container\">
+                                <div class=\"city_list_detail_text\">詳細を見る</div>
+                                <img class=\"city_list_detail_img\" src=\"/assets/img/next.png\" alt=\"画像\" oncontextmenu=\"return false;\" onselectstart=\"return false;\" onmousedown=\"return false;\">
+                            </div>
+                        </div>
+                    </a>");
+            }
+        ?>
 
         <div class="pagetop">↑</div>
         <div class="block"></div>

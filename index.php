@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="wlAR5BRt28c3PUSeriNwNjI2wz7kHyGtyk06Y3ohOZQ"/>
     <meta name=”description” content=”Minecraftサーバ（情クラ）の管理を行う、会員用サイトです。”>
-    <title>情クラサーバ</title>
+    <title>情クラ！</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
     <link rel="icon" href="/assets/icon/icon.ico">
     <link rel="stylesheet" href="/assets/css/reset.css">
@@ -43,7 +43,6 @@
             foreach (array_reverse($result) as $raw) {
                 $count++;
             }
-
             for($i=$count-1;$i>=0;$i--) {
                 $file = fopen("./feed/csv/feed".$i.".csv", "r");
                 $j=0;

@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url("/assets/css/common.css");
+@import url("/assets/css/menu.css");
+@import url("/assets/css/header.css");
+
+.header_title::before {
+    content: "マップ";
+}
+
+.city_container {
+    background-color: #ffffff8f;
+    border: solid 1px #2699fb;
+    height: 332px;
+    margin-top: 6px;
+    width: 100vw;
+}
+
+.city_back {
+    display: inline-block;
+    left: 18px;
+    position: absolute;
+    margin-top: 26px;
+    width: 35px;
+    z-index: 10;
+
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+.city_title {
+    color: #2699fb;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    left: 0;
+    margin-top: 32px;
+    position: absolute;
+    right: 0;
+}
+
+.city_update {
+    color: #2699fb;
+    font-family: Arial;
+    font-size: 12px;
+    margin-top: 65px;
+    position: absolute;
+    right: 9px;
+    text-align: center;
+}
+
+.city_img {
+    height: 222px;
+    margin-top: 87px;
+
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+.city_list_a {
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+.city_list_container {
+    background-color: #ffffff8f;
+    border: solid 1px #2699fb;
+    height: 110px;
+    left: 0;
+    margin: 20px auto 0;
+    position: relative;
+    right: 0;
+    width: 97vw;
+}
+
+.city_list_img {
+    height: 108px;
+    left: 0;
+    position: absolute;
+}
+
+.city_list_title {
+    bottom: 0;
+    color: #2699fb;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    height: fit-content;
+    left: 200px;
+    margin: auto 0;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 160px;
+}
+
+.city_list_detail_container {
+    bottom: 8px;
+    left: 220px;
+    position: absolute;
+}
+
+.city_list_detail_text {
+    color: #2699fb;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.city_list_detail_img {
+    display: inline-block;
+    width: 10px;
+}
+
+@media screen and (min-width: 600px) {
+
+}

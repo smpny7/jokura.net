@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url("/assets/css/common.css");
+@import url("/assets/css/menu.css");
+@import url("/assets/css/header.css");
+
+.header_title::before {
+    content: "マップ";
+}
+
+.map_container {
+    background-color: #ffffff8f;
+    border: solid 1px #2699fb;
+    height: 500px;
+    position: fixed;
+    width: 100vw;
+}
+
+.map_update {
+    color: #0088ff;
+    font-family: Arial;
+    font-size: 12px;
+    position: fixed;
+    right: 8px;
+    text-align: center;
+    top: 81px;
+}
+
+.map_overall {
+    left: 0;
+    position: fixed;
+    top: 100px;
+    width: 100vw;
+
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+a[class*="map_region"] {
+    background-color: #ffffff8f;
+    border: solid 1px #2699fb;
+    position: fixed;
+
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none;
+}
+
+.map_region_shintoshi {
+    height: 100px;
+    left: 4px;
+    top: 233px;
+    width: 50px;
+}
+
+.map_region_kaiteishinden {
+    height: 52px;
+    left: 96px;
+    top: 137px;
+    width: 52px;
+}
+
+.map_region_traptower {
+    height: 51px;
+    left: 139px;
+    top: 255px;
+    width: 70px;
+}
+
+.map_region_mura {
+    height: 51px;
+    left: 192px;
+    top: 317px;
+    width: 51px;
+}
+
+.map_region_maptower {
+    height: 51px;
+    left: 232px;
+    top: 132px;
+    width: 51px;
+}
+
+.map_region_toshi {
+    height: 217px;
+    left: 249px;
+    top: 214px;
+    width: 114px;
+}
+
+.map_text {
+    color: #2699fb;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    position: fixed;
+    text-align: center;
+    top: 506px;
+    width: 100vw;
+}
+
+@media screen and (min-width: 600px) {
+
+}

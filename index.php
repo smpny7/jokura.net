@@ -65,8 +65,8 @@
                 </div>");
             }
         ?>
-        <div class="pagetop">↑</div>
 
+        <div class="pagetop">↑</div>
         <div class="block"></div>
     </main>
     <script type="text/javascript" src="/assets/js/pageTop.js"></script>

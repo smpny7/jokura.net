@@ -37,7 +37,7 @@
         <div class="city_container">
             <a href="/map<?php if(toshiCheck($_GET['region'])){echo "/toshi.php";}?>"><img class="city_back" src="/assets/img/back.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
             <div class="city_title"><?php echo regionName($_GET['region'])?></div>
-            <img class="city_img" src="/map/others/<?php echo $_GET['region']."/".$_GET['region']?>_Top.png"  onerror="this.src='/map/others/<?php echo $_GET['region']."/".$_GET['region']?>_Top.jpg';" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+            <img class="city_img" src="/map/others/<?php echo $_GET['region']."/Top_".$_GET['region']?>.png"  onerror="this.src='/map/others/<?php echo $_GET['region']."/Top_".$_GET['region']?>.jpg';" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
         </div>
 
         <?php

@@ -58,21 +58,14 @@ a[class*="map_region"] {
     width: 52px;
 }
 
-.map_region_traptower {
+.map_region_trapTower {
     height: 51px;
     left: 139px;
     top: 255px;
     width: 70px;
 }
 
-.map_region_mura {
-    height: 51px;
-    left: 192px;
-    top: 317px;
-    width: 51px;
-}
-
-.map_region_maptower {
+.map_region_mapTower {
     height: 51px;
     left: 232px;
     top: 132px;
@@ -84,6 +77,41 @@ a[class*="map_region"] {
     left: 249px;
     top: 214px;
     width: 114px;
+}
+
+.map_region_camp {
+    height: 30px;
+    left: 120px;
+    top: 160px;
+    width: 30px;
+}
+
+.map_region_hotelTown {
+    height: 120px;
+    left: 110px;
+    top: 200px;
+    width: 115px;
+}
+
+.map_region_sabaku {
+    height: 60px;
+    left: 90px;
+    top: 100px;
+    width: 110px;
+}
+
+.map_region_shigechikaJo {
+    height: 70px;
+    left: 225px;
+    top: 300px;
+    width: 70px;
+}
+
+.map_region_shinToshi {
+    height: 115px;
+    left: 45px;
+    top: 360px;
+    width: 180px;
 }
 
 .map_text {

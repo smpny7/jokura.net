@@ -18,7 +18,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>マップ</title>
+    <title>マップ（都市）</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
     <link rel="icon" href="/assets/icon/icon.ico">
     <link rel="stylesheet" href="/assets/css/reset.css">
@@ -34,12 +34,13 @@
 
         <div class="map_container">
             <div class="map_update">2020.03.15&nbsp;更新</div>
-            <img class="map_overall" src="/map/img/overall.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <a href="city/?region=shinTairiku" class="map_region_shinTairiku"></a>
-            <a href="city/?region=kaiteishinden" class="map_region_kaiteishinden"></a>
-            <a href="city/?region=trapTower" class="map_region_trapTower"></a>
-            <a href="city/?region=mapTower" class="map_region_mapTower"></a>
-            <a href="toshi.php" class="map_region_toshi"></a>
+            <img class="map_overall" src="/map/img/overall_toshi.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+            <a href="city/?region=camp" class="map_region_camp"></a>
+            <a href="city/?region=hotelTown" class="map_region_hotelTown"></a>
+            <a href="city/?region=sabaku" class="map_region_sabaku"></a>
+            <a href="city/?region=shigechikaJo" class="map_region_shigechikaJo"></a>
+            <a href="city/?region=shinToshi" class="map_region_shinToshi"></a>
+
             <div class="map_text">エリアを選択してください</div>
         </div>
     </main>

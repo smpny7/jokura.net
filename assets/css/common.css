@@ -30,6 +30,14 @@ main {
     -webkit-touch-callout: none;
 }
 
+#landscape {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 99999;
+}
+
 .block {
     height: 40px;
 }

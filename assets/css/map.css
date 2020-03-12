@@ -15,6 +15,16 @@
     width: 100vw;
 }
 
+.map_back {
+    color: #0088ff;
+    font-family: Arial;
+    font-size: 12px;
+    position: fixed;
+    left: 12px;
+    text-align: center;
+    top: 81px;
+}
+
 .map_update {
     color: #0088ff;
     font-family: Arial;

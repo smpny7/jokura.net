@@ -20,4 +20,12 @@
             return "トラップタワー";
         }
     }
+
+    function toshiCheck($name) {
+        if ($name=="camp"||$name=="hotelTown"||$name=="sabaku"||$name=="shigechikaJo"||$name=="shinToshi") {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 ?>

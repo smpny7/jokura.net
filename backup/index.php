@@ -38,7 +38,7 @@
         <div class="backup_box">
             <div class="backup_title">バックアップ</div>
             <img class="backup_img" src="/assets/img/backup2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="backup_contents">再起動には、90秒程度かかります。<br>よろしいですか？</div>
+            <div class="backup_contents">バックアップには、90秒程度かかります。<br>よろしいですか？</div>
             <a id="submit" href="finished.php"><img id="yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script type="text/javascript" src="/assets/js/doubleTap.js"></script>

@@ -37,7 +37,7 @@
         <div class="backup_box">
             <div class="backup_title">プロセス拒否</div>
             <img class="backup_img" src="/assets/img/processReject.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="backup_contents">サーバが起動していないため<br>再起動が実行できませんでした。</div>
+            <div class="backup_contents">サーバが起動していないため<br>バックアップが実行できませんでした。</div>
             <a href="/"><img class="backup_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         </div>
         <div class="block"></div>

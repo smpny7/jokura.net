@@ -41,8 +41,9 @@
 }
 
 .city_img {
-    height: 222px;
+    /* height: 222px; */
     margin: 87px auto 43.5px;
+    width: 395px;
 
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;

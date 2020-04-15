@@ -45,10 +45,10 @@
 }
 
 .feed_author_container {
-    margin-left: 62%;
+    margin-left: 55%;
     margin-top: 30px;
     position: static;
-    width: 37vw;
+    width: 42vw;
 }
 
 .feed_author {
@@ -67,10 +67,10 @@
 }
 
 .feed_time_container {
-    margin-left: 62%;
+    margin-left: 55%;
     margin-top: 8px;
     position: static;
-    width: 37vw;
+    width: 42vw;
 }
 
 .feed_time {

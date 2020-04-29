@@ -35,11 +35,13 @@
         <div class="map_container">
             <div class="map_update">2020.03.15&nbsp;更新</div>
             <img class="map_overall" src="/map/img/overall.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <a href="city/?region=shinTairiku" class="map_region_shinTairiku"></a>
-            <a href="city/?region=kaiteishinden" class="map_region_kaiteishinden"></a>
-            <a href="city/?region=trapTower" class="map_region_trapTower"></a>
-            <a href="city/?region=mapTower" class="map_region_mapTower"></a>
-            <a href="toshi.php" class="map_region_toshi"></a>
+            <div class="region_container">
+                <a href="city/?region=shinTairiku" class="map_region map_region_shinTairiku"></a>
+                <a href="city/?region=kaiteishinden" class="map_region map_region_kaiteishinden"></a>
+                <a href="city/?region=trapTower" class="map_region map_region_trapTower"></a>
+                <a href="city/?region=mapTower" class="map_region map_region_mapTower"></a>
+                <a href="toshi.php" class="map_region map_region_toshi"></a>
+            </div>
             <div class="map_text">エリアを選択してください</div>
         </div>
     </main>

@@ -1,6 +1,6 @@
 <?php
-	require __DIR__ . '/../query/MinecraftPing.php';
-	require __DIR__ . '/../query/MinecraftPingException.php';
+	require_once __DIR__ . '/../query/MinecraftPing.php';
+	require_once __DIR__ . '/../query/MinecraftPingException.php';
 
 	use xPaw\MinecraftPing;
 	use xPaw\MinecraftPingException;

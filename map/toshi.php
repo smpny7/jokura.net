@@ -33,15 +33,16 @@
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
         <div class="map_container">
-            <a href="/map" class="map_back">全体図へ</a>
+            <div class="map_back_container"><a href="/map" class="map_back">全体図へ</a></div>
             <div class="map_update">2020.03.15&nbsp;更新</div>
             <img class="map_overall" src="/map/img/overall_toshi.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <a href="city/?region=camp" class="map_region_camp"></a>
-            <a href="city/?region=hotelTown" class="map_region_hotelTown"></a>
-            <a href="city/?region=sabaku" class="map_region_sabaku"></a>
-            <a href="city/?region=shigechikaJo" class="map_region_shigechikaJo"></a>
-            <a href="city/?region=shinToshi" class="map_region_shinToshi"></a>
-
+            <div class="region_container">
+                <a href="city/?region=camp" class="map_region map_region_camp"></a>
+                <a href="city/?region=hotelTown" class="map_region map_region_hotelTown"></a>
+                <a href="city/?region=sabaku" class="map_region map_region_sabaku"></a>
+                <a href="city/?region=shigechikaJo" class="map_region map_region_shigechikaJo"></a>
+                <a href="city/?region=shinToshi" class="map_region map_region_shinToshi"></a>
+            </div>
             <div class="map_text">エリアを選択してください</div>
         </div>
     </main>

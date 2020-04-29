@@ -2,18 +2,7 @@
     require __DIR__ . '/../../assets/php/check/maintenanceCheck.php';
     maintenanceCheck();
 
-    require __DIR__ . '/../../assets/php/component/regionName.php';
-
-    // $file = fopen("../others/csv/".$_GET['region'].".csv", "r");
-    // $i=0; $j=0;
-    // while($line = fgetcsv($file)){
-    //     foreach ($line as $raw) {
-    //         $city[$i][$j] = $raw;
-    //         $j++;
-    //     }
-    //     $j=0; $i++;
-    // }
-    // fclose($file);
+    require __DIR__ . '/../../assets/php/check/regionCheck.php';
 ?>
 
 <!DOCTYPE html>
@@ -46,9 +35,9 @@
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
         <div class="city_container">
-            <a href="/map"><img class="city_back" src="/assets/img/back.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
+            <a href="/map<?php if(toshiCheck($_GET['region'])){echo "/toshi.php";}?>"><img class="city_back" src="/assets/img/back.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
             <div class="city_title"><?php echo regionName($_GET['region'])?></div>
-            <img class="city_img" src="/map/others/<?php echo $_GET['region']."/".$_GET['region']?>_Top.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+            <img class="city_img" src="/map/others/<?php echo $_GET['region']."/Top_".$_GET['region']?>.png"  onerror="this.src='/map/others/<?php echo $_GET['region']."/Top_".$_GET['region']?>.jpg';" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
         </div>
 
         <?php
@@ -81,6 +70,8 @@
         <div class="pagetop">↑</div>
         <div class="block"></div>
     </main>
+    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+    <script type="text/javascript" src="/assets/js/landscape.js"></script>
     <script type="text/javascript" src="/assets/js/pageTop.js"></script>
 </body>
 </html>

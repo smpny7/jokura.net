@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 
 html::-webkit-scrollbar {
-    display:none;
+    display: none;
 }
 
 body {
@@ -28,6 +28,14 @@ main {
 
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
+}
+
+#landscape {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 99999;
 }
 
 .block {

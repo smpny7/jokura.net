@@ -10,7 +10,6 @@
 .city_container {
     background-color: #ffffff8f;
     border: solid 1px #2699fb;
-    /* height: 332px; */
     height: fit-content;
     margin-top: 6px;
     padding-bottom: 21.5px;
@@ -23,7 +22,6 @@
     position: absolute;
     margin-top: 26px;
     width: 35px;
-    z-index: 1;
 
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
@@ -37,13 +35,17 @@
     left: 0;
     margin-left: 20px;
     margin-top: 32px;
-    position: absolute;
+    position: relative;
     right: 0;
+    /* z-index: 1; */
 }
 
 .city_img {
-    height: 222px;
+    /* height: 222px; */
     margin: 87px auto 43.5px;
+    position: relative;
+    width: 348px;
+    /* z-index: 1; */
 
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
@@ -77,5 +79,62 @@
 }
 
 @media screen and (min-width: 600px) {
+    .city_container {
+        /* background-color: #ffffff8f; */
+        /* border: solid 1px #2699fb; */
+        /* height: fit-content; */
+        margin: 6px auto 0;
+        /* padding-bottom: 21.5px; */
+        position: relative;
+        top: 140px;
+        transform: scale(1.3, 1.3);
+        width: 400px;
+    }
 
+    .city_back_a {
+        display: inline-block;
+        left: 18px;
+        position: relative;
+        margin-top: 0;
+        vertical-align: top;
+        width: 35px;
+        z-index: 4;
+
+        -webkit-tap-highlight-color: #00000000;
+        -webkit-touch-callout: none;
+    }
+
+    .city_back {
+        /* display: inline-block; */
+        /* left: 18px; */
+        position: relative;
+        /* margin-top: 26px; */
+        vertical-align: top;
+        width: 35px;
+    }
+
+    .city_title {
+        /* color: #2699fb; */
+        display: inline-block;
+        /* font-family: Arial; */
+        /* font-size: 24px; */
+        /* font-weight: bold; */
+        /* left: 0; */
+        /* margin-left: 20px; */
+        /* margin-top: 32px; */
+        left: -20px;
+        position: relative;
+        vertical-align: top;
+        width: 330px;
+        /* right: 0; */
+    }
+
+    .city_img {
+        /* height: 222px; */
+        margin: 25px auto 43.5px;
+        /* width: 348px; */
+
+        /* -webkit-tap-highlight-color: #00000000; */
+        /* -webkit-touch-callout: none; */
+    }
 }

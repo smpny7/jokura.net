@@ -46,5 +46,7 @@
             <div class="map_text">エリアを選択してください</div>
         </div>
     </main>
+    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+    <script type="text/javascript" src="/assets/js/landscape.js"></script>
 </body>
 </html>

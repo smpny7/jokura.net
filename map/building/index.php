@@ -41,7 +41,7 @@
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
         <div class="city_container">
-            <a href="/map/city/?region=<?php echo $_GET['region']?>"><img class="city_back" src="/assets/img/back.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
+            <a href="/map/city/?region=<?php echo $_GET['region']?>" class="city_back_a"><img class="city_back" src="/assets/img/back.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
             <div class="city_title"><?php echo str_replace('<br>', '', $building[0])?></div>
             <img class="city_img" src="/map/others/<?php echo $_GET['region']."/".$building[1]?>" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             <div class="city_bar"></div>
@@ -53,9 +53,9 @@
             <div class="city_bar"></div>
         </div>
 
-        <div class="pagetop">↑</div>
         <div class="block"></div>
     </main>
-    <script type="text/javascript" src="/assets/js/pageTop.js"></script>
+    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+    <script type="text/javascript" src="/assets/js/landscape.js"></script>
 </body>
 </html>

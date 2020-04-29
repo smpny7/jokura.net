@@ -16,8 +16,8 @@
     position: fixed;
     right: 0;
     top: 60px;
-    width: 350px;
-    z-index: 5;
+    width: 100vw;
+    /* z-index: 5; */
 }
 
 .map_back_container {
@@ -32,7 +32,6 @@
 }
 
 .map_back {
-    /* background-color: azure; */
     color: #0088ff;
     display: inline-block;
     font-family: Arial;
@@ -63,8 +62,7 @@
     position: fixed;
     right: 0;
     top: 105px;
-    width: 350px;
-    /* z-index: 97; */
+    width: 348px;
 
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
@@ -72,16 +70,17 @@
 
 .region_container {
     height: 500px;
+    left: 0;
+    margin: 0 auto;
     position: fixed;
+    right: 0;
     width: 350px;
-    /* z-index: 98; */
 }
 
 .map_region {
     background-color: #ffffff8f;
     border: solid 1px #2699fb;
     position: absolute;
-    /* z-index: 99; */
 
     -webkit-tap-highlight-color: #00000000;
     -webkit-touch-callout: none;
@@ -92,7 +91,6 @@
     left: 0;
     top: 165px;
     width: 50px;
-    /* z-index: 100; */
 }
 
 .map_region_kaiteishinden {
@@ -100,7 +98,6 @@
     left: 88px;
     top: 77px;
     width: 52px;
-    z-index: 100;
 }
 
 .map_region_trapTower {
@@ -108,7 +105,6 @@
     left: 135px;
     top: 189px;
     width: 70px;
-    /* z-index: 100; */
 }
 
 .map_region_mapTower {
@@ -116,7 +112,6 @@
     left: 215px;
     top: 73px;
     width: 51px;
-    /* z-index: 100; */
 }
 
 .map_region_toshi {
@@ -124,7 +119,6 @@
     left: 235px;
     top: 159px;
     width: 114px;
-    /* z-index: 100; */
 }
 
 .map_region_camp {
@@ -156,7 +150,7 @@
 }
 
 .map_region_shinToshi {
-    height: 115px;
+    height: 113px;
     left: 32px;
     top: 279px;
     width: 180px;
@@ -174,13 +168,14 @@
     text-align: center;
     top: 506px;
     width: fit-content;
-    z-index: 5;
+    /* z-index: 5; */
 }
 
 @media screen and (min-width: 600px) {
     .map_container {
         top: 250px;
         transform: scale(1.5, 1.5);
+        width: 350px;
     }
 
     .map_back_container {

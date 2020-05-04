@@ -1,7 +1,3 @@
-order allow,deny
-allow from all
-deny from *.bc.googleusercontent.com
-
 RewriteEngine on
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} jokura.net

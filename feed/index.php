@@ -62,5 +62,7 @@
             <div class="feed_contents">&nbsp;<?php echo $feed[3]?></div>
         </div>
     </main>
+    <script type="text/javascript" src="/assets/js/landscape.js"></script>
+    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 </body>
 </html>

@@ -45,5 +45,7 @@
         <a href="upload.php"><img class="gallery_new" src="/assets/img/galleryNew.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         <div class="block"></div>
     </main>
+    <script type="text/javascript" src="/assets/js/landscape.js"></script>
+    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 </body>
 </html>

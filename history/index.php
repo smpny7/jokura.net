@@ -61,6 +61,8 @@
 
         <div class="block"></div>
     </main>
+    <script type="text/javascript" src="/assets/js/landscape.js"></script>
+    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 </body>
 </html>
                             <!-- <img class=\"history_delete\" src=\"/assets/img/delete.png\" alt=\"画像\" oncontextmenu=\"return false;\" onselectstart=\"return false;\" onmousedown=\"return false;\"> -->

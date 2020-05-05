@@ -55,7 +55,7 @@
 
         <div class="block"></div>
     </main>
-    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
     <script type="text/javascript" src="/assets/js/landscape.js"></script>
+    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 </body>
 </html>

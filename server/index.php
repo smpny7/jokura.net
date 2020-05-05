@@ -42,5 +42,7 @@
         <div class="server_box5"><div id="server_text_8">- - - - -</div><div id="server_text_9">RCON</div></div>
         <div class="block"></div>
     </main>
+    <script type="text/javascript" src="/assets/js/landscape.js"></script>
+    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 </body>
 </html>

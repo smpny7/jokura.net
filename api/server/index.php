@@ -1,11 +1,11 @@
 <?php
-    require_once __DIR__ . '/../assets/php/state.php';
+    require_once __DIR__ . '/../../assets/php/state.php';
     if (!$maintenanceMode) {
         echo "{ \"server\": [ { \"state\": ";
 
-        require_once __DIR__ . '/../assets/php/check/powerCheck.php';
+        require_once __DIR__ . '/../../assets/php/check/powerCheck.php';
         if (power()) {
-            $Query = require_once __DIR__ . '/../assets/php/query/query.php';
+            $Query = require_once __DIR__ . '/../../assets/php/query/query.php';
             if ($Query['description']['text'] == "") {
                 echo "2";
             } else {

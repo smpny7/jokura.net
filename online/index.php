@@ -47,7 +47,7 @@
         <div class="online_box_10"><img class="online_image_10" src="/assets/php/tool/skin.php?id=3afac34b592a8dcea0be6df00571be71490a335d56a0e903712386bdf01cd90e" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"><div class="online_name_10">YuuYuu523</div><div id="online_state_10"></div></div>
         <div class="block"></div>
     </main>
-    <script type="text/javascript" src="/assets/js/landscape.js"></script>
-    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+    <!-- <script type="text/javascript" src="/assets/js/landscape.js"></script> -->
+    <!-- <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"> -->
 </body>
 </html>

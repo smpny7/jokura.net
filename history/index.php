@@ -1,5 +1,6 @@
 <?php
     require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    require_once __DIR__ . '/../env.php';
     maintenanceCheck();
 ?>
 
@@ -35,7 +36,7 @@
 
         <?php
             require __DIR__ . '/../assets/php/tool/curl.php';
-            $curlData = curl("http://jokura-vanila.work/src/showBackupHistory.php?from=jokura.net");
+            $curlData = curl($showBackupHistory_env);
             $ltrim = '/home/jokura_banila/backup/';
             $count = 1;
             foreach (array_reverse($curlData) as $raw) {

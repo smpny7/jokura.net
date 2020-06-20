@@ -1,5 +1,6 @@
 <?php
     require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    require_once __DIR__ . '/../env.php';
     maintenanceCheck();
 
     require __DIR__ . '/../assets/php/check/powerCheck.php';
@@ -11,7 +12,7 @@
     if($_SESSION["from"] == "restart") {
         require __DIR__ . '/../assets/php/check/processCheck.php';
         if (processCheck()) {
-            readfile("http://jokura-vanila.work/src/restart.php?from=jokura.net");
+            readfile($restart_env);
         } else {
             $_SESSION["from"] = "";
             header('Location: /processReject');

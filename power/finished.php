@@ -1,12 +1,13 @@
 <?php
     require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+    require_once __DIR__ . '/../env.php';
     maintenanceCheck();
 
     session_start();
     if($_SESSION["from"] == "powerOn") {
         require __DIR__ . '/../assets/php/check/processCheck.php';
         if (processCheck()) {
-            readfile("http://jokura-vanila.work/src/powerOn.php?from=jokura.net");
+            readfile($powerOn_env);
         } else {
             $_SESSION["from"] = "";
             header('Location: /processReject');
@@ -15,7 +16,7 @@
     } else if($_SESSION["from"] == "powerOff") {
         require __DIR__ . '/../assets/php/check/processCheck.php';
         if (processCheck()) {
-            readfile("http://jokura-vanila.work/src/powerOff.php?from=jokura.net");
+            readfile($powerOff_env);
         } else {
             $_SESSION["from"] = "";
             header('Location: /processReject');

@@ -45,6 +45,7 @@
         <div class="online_box_8"><img class="online_image_8" src="/assets/php/tool/skin.php?id=41b8dbada89f0ec4643b0591bc894dbb935cf0c12e34c6501c2888da37ac3b77" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"><div class="online_name_8">TUIUS</div><div id="online_state_8"></div></div>
         <div class="online_box_9"><img class="online_image_9" src="/assets/php/tool/skin.php?id=590674548fc666e7e9c815e86dbd78f80ff37b0265281a18ff90db2ba68d13f4" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"><div class="online_name_9">Xx_piroboy_xX</div><div id="online_state_9"></div></div>
         <div class="online_box_10"><img class="online_image_10" src="/assets/php/tool/skin.php?id=3afac34b592a8dcea0be6df00571be71490a335d56a0e903712386bdf01cd90e" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"><div class="online_name_10">YuuYuu523</div><div id="online_state_10"></div></div>
+        <!-- <div class="online_box_11"><img class="online_image_11" src="/assets/php/tool/skin.php?id=3afac34b592a8dcea0be6df00571be71490a335d56a0e903712386bdf01cd90e" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"><div class="online_name_11">yuki9089</div><div id="online_state_11"></div></div> -->
         <div class="block"></div>
     </main>
     <!-- <script type="text/javascript" src="/assets/js/landscape.js"></script> -->

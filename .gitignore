@@ -1,2 +1,6 @@
 .DS_Store
-.p2
+env.txt
+assets/php/check/temp/processing.txt
+
+api
+src

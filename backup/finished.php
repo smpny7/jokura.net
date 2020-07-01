@@ -1,38 +1,42 @@
 <?php
-    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
-    require_once __DIR__ . '/../env.php';
-    maintenanceCheck();
+require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+require_once __DIR__ . '/../env.php';
+maintenanceCheck();
 
-    require __DIR__ . '/../assets/php/check/powerCheck.php';
-    if (power() == 0) {
-        header('Location: unavailable.php');
-    }
+require __DIR__ . '/../assets/php/check/powerCheck.php';
+if (power() == 0) {
+    header('Location: unavailable.php');
+}
 
-    session_start();
-    if($_SESSION["from"] == "backup") {
-        require __DIR__ . '/../assets/php/check/processCheck.php';
-        if (processCheck()) {
-            readfile($backup_env);
-        } else {
-            $_SESSION["from"] = "";
-            header('Location: /processReject');
-            exit;
-        }
+session_start();
+if ($_SESSION["from"] == "backup") {
+    require __DIR__ . '/../assets/php/check/processCheck.php';
+    if (processCheck()) {
+        readfile($backup_env);
     } else {
         $_SESSION["from"] = "";
-        header('Location: /');
+        header('Location: /processReject');
         exit;
     }
+} else {
+    $_SESSION["from"] = "";
+    header('Location: /');
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160052296-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-160052296-1');
@@ -49,8 +53,8 @@
 </head>
 
 <body>
-    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
-    <?php require __DIR__ . '/../assets/php/component/header.php'?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php' ?>
+    <?php require __DIR__ . '/../assets/php/component/header.php' ?>
 
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
@@ -64,7 +68,6 @@
         </div>
         <div class="block"></div>
     </main>
-    <script type="text/javascript" src="/assets/js/landscape.js"></script>
-    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 </body>
+
 </html>

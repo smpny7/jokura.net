@@ -1,16 +1,20 @@
 <?php
-    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
-    maintenanceCheck();
+require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+maintenanceCheck();
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160052296-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-160052296-1');
@@ -26,26 +30,25 @@
 </head>
 
 <body>
-    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
-    <?php require __DIR__ . '/../assets/php/component/header.php'?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php' ?>
+    <?php require __DIR__ . '/../assets/php/component/header.php' ?>
 
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
         <div class="block"></div>
         <?php
-            $result = glob('./img/*');
-            foreach (array_reverse($result) as $raw) {
-                $file = ltrim($raw, './img/');
-                preg_match("/(.*)(?:\.([^.]+$))/",$file,$filename);
-                $number = mb_substr($filename[1], 0, 3);
-                $photographer = mb_substr($filename[1], 4);
-                echo ("<div class=\"gallery_container\"><img class=\"gallery_img\" src=\"img/".$file."\" alt=\"画像\"><div class=\"gallery_photographer\">".$photographer."</div></div>");
-            }
+        $result = glob('./img/*');
+        foreach (array_reverse($result) as $raw) {
+            $file = ltrim($raw, './img/');
+            preg_match("/(.*)(?:\.([^.]+$))/", $file, $filename);
+            $number = mb_substr($filename[1], 0, 3);
+            $photographer = mb_substr($filename[1], 4);
+            echo ("<div class=\"gallery_container\"><img class=\"gallery_img\" src=\"img/" . $file . "\" alt=\"画像\"><div class=\"gallery_photographer\">" . $photographer . "</div></div>");
+        }
         ?>
         <a href="upload.php"><img class="gallery_new" src="/assets/img/galleryNew.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         <div class="block"></div>
     </main>
-    <script type="text/javascript" src="/assets/js/landscape.js"></script>
-    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 </body>
+
 </html>

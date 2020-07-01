@@ -1,19 +1,23 @@
 <?php
-    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
-    maintenanceCheck();
+require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+maintenanceCheck();
 
-    session_start();
-    $_SESSION["from"] = "restart";
+session_start();
+$_SESSION["from"] = "restart";
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160052296-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-160052296-1');
@@ -29,8 +33,8 @@
 </head>
 
 <body>
-    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
-    <?php require __DIR__ . '/../assets/php/component/header.php'?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php' ?>
+    <?php require __DIR__ . '/../assets/php/component/header.php' ?>
 
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
@@ -41,13 +45,12 @@
             <img class="restart_img" src="/assets/img/restart2.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             <div class="restart_contents">再起動には、80秒程度かかります。<br>よろしいですか？</div>
             <a id="submit" href="finished.php"><img id="yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <script type="text/javascript" src="/assets/js/doubleTap.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script type="text/javascript" src="/assets/js/doubleTap.js"></script>
             <a href="/"><img class="restart_no" src="/assets/img/no.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         </div>
         <div class="block"></div>
     </main>
-    <script type="text/javascript" src="/assets/js/landscape.js"></script>
-    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 </body>
+
 </html>

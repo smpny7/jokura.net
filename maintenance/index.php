@@ -1,18 +1,22 @@
 <?php
-    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
-    maintenanceFinishCheck();
+require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+maintenanceFinishCheck();
 
-    require __DIR__ . '/../assets/php/state.php';
+require __DIR__ . '/../assets/php/state.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160052296-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-160052296-1');
@@ -38,12 +42,11 @@
         <div class="maintenance_box">
             <div class="maintenance_title">少しだけお待ちください</div>
             <img class="maintenance_img" src="/assets/img/maintenance.gif" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            <div class="maintenance_contents"><?php echo $maintenanceDateFrom?>&nbsp;<?php echo $maintenanceTimeFrom?>&nbsp;〜&nbsp;<?php echo $maintenanceDateTo?>&nbsp;<?php echo $maintenanceTimeTo?></div>
+            <div class="maintenance_contents"><?php echo $maintenanceDateFrom ?>&nbsp;<?php echo $maintenanceTimeFrom ?>&nbsp;〜&nbsp;<?php echo $maintenanceDateTo ?>&nbsp;<?php echo $maintenanceTimeTo ?></div>
             <div class="maintenance_copyright">&copy;&nbsp;2020&nbsp;情クラ&nbsp;All&nbsp;Right&nbsp;Reserved.</div>
         </div>
         <div class="block"></div>
     </main>
-    <script type="text/javascript" src="/assets/js/landscape.js"></script>
-    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 </body>
+
 </html>

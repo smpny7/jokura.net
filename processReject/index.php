@@ -1,16 +1,20 @@
 <?php
-    require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
-    maintenanceCheck();
+require __DIR__ . '/../assets/php/check/maintenanceCheck.php';
+maintenanceCheck();
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160052296-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-160052296-1');
@@ -27,8 +31,8 @@
 </head>
 
 <body>
-    <?php require __DIR__ . '/../assets/php/component/menu.php'?>
-    <?php require __DIR__ . '/../assets/php/component/header.php'?>
+    <?php require __DIR__ . '/../assets/php/component/menu.php' ?>
+    <?php require __DIR__ . '/../assets/php/component/header.php' ?>
 
     <main>
         <img class="background" src="/assets/img/background.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
@@ -36,13 +40,13 @@
         <div class="block"></div>
         <div class="processReject_box">
             <div class="processReject_title">プロセス拒否</div>
-            <div class="processReject_contents">サーバ処理中・処理後90秒間は<br>サーバー操作が禁止されています。<br><br>操作可能まで、あと<?php require __DIR__ . '/../assets/php/check/processCheck.php'; echo processTime()?>秒です。</div>
+            <div class="processReject_contents">サーバ処理中・処理後90秒間は<br>サーバー操作が禁止されています。<br><br>操作可能まで、あと<?php require __DIR__ . '/../assets/php/check/processCheck.php';
+                                                                                                    echo processTime() ?>秒です。</div>
             <a href="/"><img class="processReject_yes" src="/assets/img/yes.png" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a>
         </div>
         </div>
         <div class="block"></div>
     </main>
-    <script type="text/javascript" src="/assets/js/landscape.js"></script>
-    <img id="landscape" src="/assets/img/landscape.jpg" alt="画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 </body>
+
 </html>

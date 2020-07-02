@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url("/assets/css/common.css");
+@import url("/assets/css/menu.css");
+@import url("/assets/css/header.css");
+.header_title::before {
+    content: "情クラ統合認証システム";
+}
+
+.login_box {
+    background-color: #ffffffad;
+    border: solid 1px #2699fb;
+    height: 280px;
+    margin: 10vh auto 0;
+    overflow: hidden;
+    text-align: center;
+    width: 320px;
+}
+
+.login_title {
+    color: #2699FB;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.login_title span {
+    display: inline-block;
+    margin: 3px 0;
+}
+
+#firebaseui-auth-container {
+    margin-top: 40px;
+}
+
+.error_box {
+    background-color: #ffffffad;
+    border: solid 1px #2699fb;
+    height: 245px;
+    margin: 5vh auto 0;
+    text-align: center;
+    width: 320px;
+}
+
+.error_title {
+    color: #2699FB;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.error_contents {
+    color: #2699FB;
+    font-family: Arial;
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 51px;
+}
+
+.error_contents span {
+    display: inline-block;
+}
+
+@media screen and (min-width: 600px) {
+    .login_box {
+        height: 370px;
+        margin-bottom: 0;
+        margin-top: 100px;
+        width: 502px;
+    }
+    .login_title {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    #firebaseui-auth-container {
+        margin-top: 60px;
+        transform: scale(1.2, 1.2);
+    }
+    .error_box {
+        height: 420px;
+        margin-bottom: 0;
+        margin-top: 40px;
+        width: 502px;
+    }
+    .error_title {
+        font-size: 45px;
+        margin-top: 77px;
+    }
+    .error_contents {
+        font-size: 25px;
+        line-height: 42px;
+        margin-top: 92.3px;
+    }
+    .error_box a {
+        position: relative;
+        z-index: 4;
+    }
+}
